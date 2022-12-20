@@ -1,0 +1,138 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Killer_Icon.png" />
+    <None Remove="Killer_Icon_Inverted.png" />
+    <None Remove="Resources\Killer_Icons\Artist_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Blight_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Cannibal_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Cenobite_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Clown_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Deathslinger_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Demogorgon_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Doctor_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Dredge_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Executioner_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Ghost_Face_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Hag_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Hillbilly_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Huntress_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Knight_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Legion_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Mastermind_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Nemesis_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Nightmare_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Nurse_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Oni_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Onryo_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Pig_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Plague_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Shape_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Spirit_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Trapper_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Trapper_Portrait.webp" />
+    <None Remove="Resources\Killer_Icons\Trickster_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Twins_Portrait.png" />
+    <None Remove="Resources\Killer_Icons\Wraith_Portrait.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_agitation.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_aNursesCalling.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_AwakenedAwareness.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_Bamboozle.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_BarbecueAndChilli.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_BeastOfPrey.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_BitterMurmur.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_BloodEcho.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_Bloodhound.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_BloodWarden.png" />
+    <None Remove="Resources\Killer_Perks\IconPerks_BrutalStrength.png" />
+    <None Remove="Resources\Misc\Campfire_Background.png" />
+    <None Remove="Resources\Misc\DBD_Fog_Background.png" />
+    <None Remove="Resources\Misc\Inverted_Missing_Person.png" />
+    <None Remove="Resources\Misc\Missing_Person.png" />
+    <None Remove="Resources\Misc\Perk_Background.png" />
+    <None Remove="Resources\Misc\Transparent_Background.png" />
+    <None Remove="Survivor_Icon.png" />
+    <None Remove="Survivor_Icon_Inverted.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Killer_Icons\Artist_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Blight_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Cannibal_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Cenobite_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Clown_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Deathslinger_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Demogorgon_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Doctor_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Dredge_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Executioner_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Ghost_Face_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Hag_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Hillbilly_Portrait.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Killer_Icons\Huntress_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Knight_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Legion_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Mastermind_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Nemesis_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Nightmare_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Nurse_Portrait.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Killer_Icons\Oni_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Onryo_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Pig_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Plague_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Shape_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Spirit_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Trapper_Portrait.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Killer_Icons\Trickster_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Twins_Portrait.png" />
+    <Resource Include="Resources\Killer_Icons\Wraith_Portrait.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Killer_Perks\IconPerks_Agitation.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_ANursesCalling.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_AwakenedAwareness.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_Bamboozle.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_BarbecueAndChilli.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_BeastOfPrey.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_BitterMurmur.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_BloodEcho.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_Bloodhound.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_BloodWarden.png" />
+    <Resource Include="Resources\Killer_Perks\IconPerks_BrutalStrength.png" />
+    <Resource Include="Resources\Misc\Campfire_Background.png" />
+    <Resource Include="Resources\Misc\DBD_Fog_Background.png" />
+    <Resource Include="Resources\Misc\Inverted_Missing_Person.png" />
+    <Resource Include="Resources\Misc\Missing_Person.png" />
+    <Resource Include="Resources\Misc\Perk_Background.png" />
+    <Resource Include="Resources\Misc\Transparent_Background.png" />
+    <Resource Include="Resources\Misc\Survivor_Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Misc\Survivor_Icon_Inverted.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Misc\Killer_Icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Misc\Killer_Icon_Inverted.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
