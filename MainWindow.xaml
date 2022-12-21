@@ -295,7 +295,7 @@
 
     <Grid Background="LightGray">
 
-        <TabControl TabStripPlacement="Left" Background="LightGray" BorderBrush="DarkGray" Foreground="Black" Margin="0,0,0,0">
+        <TabControl TabStripPlacement="Left" Background="DarkGray" BorderBrush="DarkGray" Foreground="Black" Margin="0,0,0,0">
             <TabControl.Resources>
                 <Style TargetType="TabItem" >
                     <Setter Property="Template">
@@ -344,9 +344,8 @@
 
             <TabItem Name="Tab3" Header="Tab3" Height="120">
                 <TabItem.Content>
-                    <TextBlock TextWrapping="WrapWithOverflow">
-        Tab3 property information goes here.
-                    </TextBlock>
+                    <local:Killer_Match/>
+
                 </TabItem.Content>
             </TabItem>
         </TabControl>

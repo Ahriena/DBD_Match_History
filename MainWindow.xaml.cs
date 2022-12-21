@@ -26,6 +26,7 @@ namespace DBD_Match_History
             InitializeComponent();
         }
 
+        // scroll wheel functionality
         private void ScrollViewer_MouseWheel(object sender, System.Windows.Input.MouseWheelEventArgs e)
         {
             ScrollViewer scv = (ScrollViewer)sender;

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="DBD_Match_History.Killer_Match"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DBD_Match_History"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="470">
+    <Grid>
+        <!--  Background-->
+        <Rectangle Name="Backdrop" Height="100" Width="470" Fill="Transparent" Stroke="Black"/>
+
+        <!-- Killer icon-->
+        <Image Name ="Killer_Portrait" Source="Resources/Misc/Transparent_Background.png" Height="110" Width="100" Margin="-400,0,0,0"/>
+
+        <!-- Perk Backgrounds-->
+        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="-260,-30,0,0"/>
+        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="-125,-30,0,0"/>
+        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="10,-30,0,0"/>
+        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="145,-30,0,0"/>
+
+        <!-- Perk Images-->
+        <Image Name ="Perk1" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="-260,-30,0,0"/>
+        <Image Name ="Perk2" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="-125,-30,0,0"/>
+        <Image Name ="Perk3" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="10,-30,0,0"/>
+        <Image Name ="Perk4" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="145,-30,0,0"/>
+        
+        <!-- Survivor fates -->
+        <Image Name ="Survivor1" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Death_Icon.png" Height="40" Width="40" Margin="-195,40,0,0"/>
+        <Image Name ="Survivor2" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Disconnect_Icon.png" Height="40" Width="40" Margin="-58,40,0,0"/>
+        <Image Name ="Survivor3" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Escaped_Icon.png" Height="40" Width="40" Margin="79,40,0,0"/>
+        <Image Name ="Survivor4" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Sacrificed_Icon.png" Height="40" Width="40" Margin="216,40,0,0"/>
+    </Grid>
+</UserControl>
