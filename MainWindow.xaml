@@ -328,7 +328,7 @@
                     <Image Source="/Resources/Misc/Killer_Icon_Inverted.png" Height="100" Width="100"/>
                 </TabItem.Header>
 
-                <local:Killer_History_Tab></local:Killer_History_Tab>
+                <local:Killer_History_Tab/>
             </TabItem>
 
             <TabItem Name="Survivor_Data">
@@ -337,7 +337,7 @@
                 </TabItem.Header>
 
                 <Grid>
-                    <local:Killer_History_Tab></local:Killer_History_Tab>
+                    <local:Killer_History_Tab/>
 
                 </Grid>
             </TabItem>

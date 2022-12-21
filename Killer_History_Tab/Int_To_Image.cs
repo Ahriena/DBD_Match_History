@@ -164,7 +164,52 @@ namespace DBD_Match_History
              *  8 = Blood Warden
              *  9 = Bloodhound
              * 10 = Brutal Strength
-             *
+             * 11 = Call of Brine             Until this project I legit though it was "Call of the brine"
+             * 12 = Claustrophobia
+             * 13 = Corrupt Intervention
+             * 14 = Coulrophobia
+             * 15 = Coup de Grace
+             * 16 = Dark Devotion
+             * 17 = Darkness Revealed
+             * 18 = Dead Man's Switch
+             * 19 = Deadlock
+             * 20 = Deathbound
+             * 21 = Deerstalker
+             * 22 = Discordance
+             * 23 = Dissolution
+             * 24 = Distressing
+             * 25 = Dragon's Grip
+             * 26 = Dying Light
+             * 27 = Enduring
+             * 28 = Eruption
+             * 29 = Fearmonger
+             * 30 = Fire Up
+             * 31 = Forced Penance
+             * 32 = Franklin's Demise
+             * 33 = Furtive Chase
+             * 34 = Gearhead
+             * 35 = Grim Embrace
+             * 36 = Hangman's Trick
+             * 37 = Hex: Blood Favor
+             * 38 = Hex: Crowd Control
+             * 39 = Hex: Devour Hope
+             * 40 = Hex: Face the Darkness
+             * 41 = Hex: Haunted Ground
+             * 42 = Hex: Huntress Lullaby
+             * 43 = Hex: No One Escapes Death
+             * 44 = Hex: Pentimento
+             * 45 = Hex: Plaything
+             * 46 = Hex: Retribution
+             * 47 = Hex: Ruin
+             * 48 = Hex: The Third Seal
+             * 49 = Hex: Thrill of the Hunt
+             * 50 = Hex: Undying
+             * 51 = Hoarder
+             * 52 = Hubris
+             * 53 = Hysteria
+             * 54 = I'm All Ears
+             * 55 = Infectious Fright
+             * 56 = Insidious
              *
              *
              *
@@ -212,6 +257,145 @@ namespace DBD_Match_History
                 case 10:
                     image = new(@"/Resources/Killer_Perks/IconPerks_BrutalStrength.png", UriKind.Relative);
                     return image;
+                case 11:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_CallOfBrine.png", UriKind.Relative);
+                    return image;
+                case 12:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Claustrophobia.png", UriKind.Relative);
+                    return image;
+                case 13:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_CorruptIntervention.png", UriKind.Relative);
+                    return image;
+                case 14:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Coulrophobia.png", UriKind.Relative);
+                    return image;
+                case 15:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_CoupDeGrace.png", UriKind.Relative);
+                    return image;
+                case 16:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_DarkDevotion.png", UriKind.Relative);
+                    return image;
+                case 17:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_DarknessRevealed.png", UriKind.Relative);
+                    return image;
+                case 18:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_DeadMansSwitch.png", UriKind.Relative);
+                    return image;
+                case 19:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Deadlock.png", UriKind.Relative);
+                    return image;
+                case 20:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Deathbound.png", UriKind.Relative);
+                    return image;
+                case 21:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Deerstalker.png", UriKind.Relative);
+                    return image;
+                case 22:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Discordance.png", UriKind.Relative);
+                    return image;
+                case 23:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Dissolution.png", UriKind.Relative);
+                    return image;
+                case 24:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Distressing.png", UriKind.Relative);
+                    return image;
+                case 25:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_DragonsGrip.png", UriKind.Relative);
+                    return image;
+                case 26:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_DyingLight.png", UriKind.Relative);
+                    return image;
+                case 27:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Enduring.png", UriKind.Relative);
+                    return image;
+                case 28:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Eruption.png", UriKind.Relative);
+                    return image;
+                case 29:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Fearmonger.png", UriKind.Relative);
+                    return image;
+                case 30:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_FireUp.png", UriKind.Relative);
+                    return image;
+                case 31:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ForcedPenance.png", UriKind.Relative);
+                    return image;
+                case 32:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_FranklinsDemise.png", UriKind.Relative);
+                    return image;
+                case 33:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_FurtiveChase.png", UriKind.Relative);
+                    return image;
+                case 34:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Gearhead.png", UriKind.Relative);
+                    return image;
+                case 35:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_GrimEmbrace.png", UriKind.Relative);
+                    return image;
+                case 36:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HangmansTrick.png", UriKind.Relative);
+                    return image;
+                case 37:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexBloodFavour.png", UriKind.Relative);
+                    return image;
+                case 38:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexCrowdControl.png", UriKind.Relative);
+                    return image;
+                case 39:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexDevourHope.png", UriKind.Relative);
+                    return image;
+                case 40:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexFaceTheDarkness.png", UriKind.Relative);
+                    return image;
+                case 41:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexHauntedGround.png", UriKind.Relative);
+                    return image;
+                case 42:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexHuntressLullaby.png", UriKind.Relative);
+                    return image;
+                case 43:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexNoOneEscapesDeath.png", UriKind.Relative);
+                    return image;
+                case 44:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexPentimento.png", UriKind.Relative);
+                    return image;
+                case 45:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexPlaything.png", UriKind.Relative);
+                    return image;
+                case 46:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexRetribution.png", UriKind.Relative);
+                    return image;
+                case 47:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexRuin.png", UriKind.Relative);
+                    return image;
+                case 48:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexTheThirdSeal.png", UriKind.Relative);
+                    return image;
+                case 49:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexThrillOfTheHunt.png", UriKind.Relative);
+                    return image;
+                case 50:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_HexUndying.png", UriKind.Relative);
+                    return image;
+                case 51:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Hoarder.png", UriKind.Relative);
+                    return image;
+                case 52:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Hubris.png", UriKind.Relative);
+                    return image;
+                case 53:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Hysteria.png", UriKind.Relative);
+                    return image;
+                case 54:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ImAllEars.png", UriKind.Relative);
+                    return image;
+                case 55:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_InfectiousFright.png", UriKind.Relative);
+                    return image;
+                case 56:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Insidious.png", UriKind.Relative);
+                    return image;
+
 
                 default:
                     image = new(@"/Resources/Misc/Transparent_Background.png", UriKind.Relative);

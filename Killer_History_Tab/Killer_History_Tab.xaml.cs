@@ -60,10 +60,10 @@ namespace DBD_Match_History
             Game10Image.Source = new BitmapImage(Int_To_Killer_Portrait(R.Next() % 30));
 
 
-            Game1Perk1.Source = new BitmapImage(Int_To_Killer_Perk(8));
-            Game1Perk2.Source = new BitmapImage(Int_To_Killer_Perk(9));
-            Game1Perk3.Source = new BitmapImage(Int_To_Killer_Perk(10));
-            Game1Perk4.Source = new BitmapImage(Int_To_Killer_Perk(7));
+            Game1Perk1.Source = new BitmapImage(Int_To_Killer_Perk(53));
+            Game1Perk2.Source = new BitmapImage(Int_To_Killer_Perk(54));
+            Game1Perk3.Source = new BitmapImage(Int_To_Killer_Perk(55));
+            Game1Perk4.Source = new BitmapImage(Int_To_Killer_Perk(56));
 
             Game2Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
             Game2Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
@@ -75,12 +75,40 @@ namespace DBD_Match_History
             Game3Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
             Game3Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
 
+            Game4Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game4Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game4Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game4Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
 
+            Game5Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game5Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game5Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game5Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+
+            Game6Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game6Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game6Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game6Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+
+            Game7Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game7Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game7Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game7Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+
+            Game8Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game8Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game8Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game8Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+
+            Game9Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game9Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game9Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game9Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+
+            Game10Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game10Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game10Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game10Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
         }
-
-
-
     }
-
-
 }

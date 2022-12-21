@@ -263,15 +263,9 @@
             <ScrollViewer.Background>
                 <SolidColorBrush Color="LightGray" Opacity=".2"/>
             </ScrollViewer.Background>
-            
-            
+
+
             <ListView  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent">
-                <!--
-                <ListView.Background>
-                    <ImageBrush ImageSource="pack://application:,,,/Resources/Misc/Campfire_Background.png"/>
-                </ListView.Background>
-                -->
-                
                 <!--  ******  GAME 1 ******  -->
                 <Grid>
                     <!--  Background-->
@@ -279,8 +273,6 @@
                     
                     <!-- Killer icon-->
                     <Image Name ="Game1Image" Source="Resources/Misc/Transparent_Background.png" Height="110" Width="100" Margin="-400,0,0,0"/>
-
-
 
                     <!-- Perk Backgrounds-->
                     <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="-260,-30,0,0"/>
@@ -366,7 +358,6 @@
                 </Grid>
 
                 <!--  ******  GAME 5 ******  -->
-
                 <Grid>
                     <!--  Background-->
                     <Rectangle Name="Game5" Height="100" Width="470" Fill="Transparent" Stroke="Black"/>
@@ -390,7 +381,6 @@
 
 
                 <!--  ******  GAME 6 ******  -->
-
                 <Grid>
                     <!--  Background-->
                     <Rectangle Name="Game6" Height="100" Width="470" Fill="Transparent" Stroke="Black"/>
@@ -413,7 +403,6 @@
                 </Grid>
 
                 <!--  ******  GAME 7 ******  -->
-
                 <Grid>
                     <!--  Background-->
                     <Rectangle Name="Game7" Height="100" Width="470" Fill="Transparent" Stroke="Black"/>
@@ -437,7 +426,6 @@
 
 
                 <!--  ******  GAME 8 ******  -->
-
                 <Grid>
                     <!--  Background-->
                     <Rectangle Name="Game8" Height="100" Width="470" Fill="Transparent" Stroke="Black"/>
@@ -461,7 +449,6 @@
 
 
                 <!--  ******  GAME 9 ******  -->
-
                 <Grid>
                     <!--  Background-->
                     <Rectangle Name="Game9" Height="100" Width="470" Fill="Transparent" Stroke="Black"/>
