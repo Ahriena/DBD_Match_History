@@ -8,11 +8,19 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="0,0,0,0">
         <Grid.Background>
-            <ImageBrush ImageSource="pack://application:,,,/Resources/Misc/DBD_Fog_Background.png"/>
+            <ImageBrush ImageSource="/Resources/Misc/DBD_Fog_Background.png"/>
         </Grid.Background>
         
         <!-- Dropdown box to dictate selection-->
         <ComboBox Style="{DynamicResource ComboBoxStyle1}" Background ="Red"  BorderBrush="Red" SelectedIndex="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="54" Margin="20,10,0,0">
+
+            <!--   All Killers  -->
+            <ComboBoxItem FontSize="20" FontWeight="Bold" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="pack://application:,,,/Resources/Misc/Missing_Person.png" Height="45" Margin="-5,0,0,0"></Image>
+                    <TextBlock Text="All Killers" Margin="15,10,0,0"/>
+                </StackPanel>
+            </ComboBoxItem>
 
             <!--   Trapper  -->
             <ComboBoxItem FontSize="20" FontWeight="Bold" VerticalAlignment="Center">
@@ -266,11 +274,14 @@
 
 
             <ListView  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent">
+                <local:Killer_Match x:Name="Testing"/>
+
+
                 <!--  ******  GAME 1 ******  -->
                 <Grid>
                     <!--  Background-->
                     <Rectangle Name="Game1" Height="100" Width="470" Fill="Transparent" Stroke="Black"/>
-                    
+
                     <!-- Killer icon-->
                     <Image Name ="Game1Image" Source="Resources/Misc/Transparent_Background.png" Height="110" Width="100" Margin="-400,0,0,0"/>
 
@@ -286,7 +297,6 @@
                     <Image Name ="Game1Perk3" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="10,-30,0,0"/>
                     <Image Name ="Game1Perk4" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="145,-30,0,0"/>
                 </Grid>
-
 
                 <!--  ******  GAME 2 ******  -->
                 <Grid>

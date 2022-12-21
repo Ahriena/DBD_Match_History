@@ -210,13 +210,52 @@ namespace DBD_Match_History
              * 54 = I'm All Ears
              * 55 = Infectious Fright
              * 56 = Insidious
-             *
-             *
-             *
-             *
-             *
-             *
-             *
+             * 57 = Iron Grasp
+             * 58 = Iron Maiden
+             * 59 = Jolt
+             * 60 = Knock Out
+             * 61 = Lethal Pursuer
+             * 62 = Lightborn
+             * 63 = Mad Grit
+             * 64 = Make Your Choice
+             * 65 = Merciless Storm
+             * 66 = Monitor And Abuse
+             * 67 = Nemesis
+             * 68 = No Way Out
+             * 69 = NowhereToHide
+             * 70 = Oppression
+             * 71 = Overcharge
+             * 72 = OverwhelmingPresence
+             * 73 = Play With Your Food
+             * 74 = Pop Goes The Weasel
+             * 75 = Predator
+             * 76 = Rancor
+             * 77 = Remember Me
+             * 78 = Save The Best For Last
+             * 79 = Scourge Hook: Floods Of Rage
+             * 80 = Scourge Hook: Gift Of Pain
+             * 81 = Scourge Hook: Monstrous Shrine
+             * 82 = Scourge Hook: Pain Resonance
+             * 83 = Septic Touch
+             * 84 = Shadowborn
+             * 85 = Shattered Hope
+             * 86 = Sloppy Butcher
+             * 87 = Spies From The Shadows
+             * 88 = Spirit Fury
+             * 89 = Starstruck
+             * 90 = Stridor
+             * 91 = Superior Anatomy
+             * 92 = Surveillance
+             * 93 = Terminus
+             * 94 = Territorial Imperative
+             * 95 = Thanataphobia
+             * 96 = Thrilling Tremors
+             * 97 = Tinkerer
+             * 98 = Trail of Torment
+             * 99 = Unnerving Presence
+             * 100 = Unrelenting
+             * 101 = Whispers
+             * 102 = Zanshin Tactics
              */
 
 
@@ -395,7 +434,144 @@ namespace DBD_Match_History
                 case 56:
                     image = new(@"/Resources/Killer_Perks/IconPerks_Insidious.png", UriKind.Relative);
                     return image;
-
+                case 57:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_IronGrasp.png", UriKind.Relative);
+                    return image;
+                case 58:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_IronMaiden.png", UriKind.Relative);
+                    return image;
+                case 59:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Jolt.png", UriKind.Relative);
+                    return image;
+                case 60:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_KnockOut.png", UriKind.Relative);
+                    return image;
+                case 61:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_LethalPursuer.png", UriKind.Relative);
+                    return image;
+                case 62:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Lightborn.png", UriKind.Relative);
+                    return image;
+                case 63:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_MadGrit.png", UriKind.Relative);
+                    return image;
+                case 64:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_MakeYourChoice.png", UriKind.Relative);
+                    return image;
+                case 65:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_MercilessStorm.png", UriKind.Relative);
+                    return image;
+                case 66:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_MonitorAndAbuse.png", UriKind.Relative);
+                    return image;
+                case 67:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Nemesis.png", UriKind.Relative);
+                    return image;
+                case 68:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_NoWayOut.png", UriKind.Relative);
+                    return image;
+                case 69:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_NowhereToHide.png", UriKind.Relative);
+                    return image;
+                case 70:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Oppression.png", UriKind.Relative);
+                    return image;
+                case 71:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Overcharge.png", UriKind.Relative);
+                    return image;
+                case 72:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_OverwhelmingPresence.png", UriKind.Relative);
+                    return image;
+                case 73:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_PlayWithYourFood.png", UriKind.Relative);
+                    return image;
+                case 74:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_PopGoesTheWeasel.png", UriKind.Relative);
+                    return image;
+                case 75:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Predator.png", UriKind.Relative);
+                    return image;
+                case 76:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Rancor.png", UriKind.Relative);
+                    return image;
+                case 77:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_RememberMe.png", UriKind.Relative);
+                    return image;
+                case 78:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_SaveTheBestForLast.png", UriKind.Relative);
+                    return image;
+                case 79:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ScourgeHookFloodsOfRage.png", UriKind.Relative);
+                    return image;
+                case 80:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ScourgeHookGiftOfPain.png", UriKind.Relative);
+                    return image;
+                case 81:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ScourgeHookMonstrousShrine.png", UriKind.Relative);
+                    return image;
+                case 82:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ScourgeHookPainResonance.png", UriKind.Relative);
+                    return image;
+                case 83:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_SepticTouch.png", UriKind.Relative);
+                    return image;
+                case 84:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Shadowborn.png", UriKind.Relative);
+                    return image;
+                case 85:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ShatteredHope.png", UriKind.Relative);
+                    return image;
+                case 86:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_SloppyButcher.png", UriKind.Relative);
+                    return image;
+                case 87:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_SpiesFromTheShadows.png", UriKind.Relative);
+                    return image;
+                case 88:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_SpiritFury.png", UriKind.Relative);
+                    return image;
+                case 89:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Starstruck.png", UriKind.Relative);
+                    return image;
+                case 90:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Stridor.png", UriKind.Relative);
+                    return image;
+                case 91:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_SuperiorAnatomy.png", UriKind.Relative);
+                    return image;
+                case 92:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Surveillance.png", UriKind.Relative);
+                    return image;
+                case 93:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Terminus.png", UriKind.Relative);
+                    return image;
+                case 94:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_TerritorialImperative.png", UriKind.Relative);
+                    return image;
+                case 95:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Thanatophobia.png", UriKind.Relative);
+                    return image;
+                case 96:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ThrillingTremors.png", UriKind.Relative);
+                    return image;
+                case 97:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Tinkerer.png", UriKind.Relative);
+                    return image;
+                case 98:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_TrailOfTorment.png", UriKind.Relative);
+                    return image;
+                case 99:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_UnnervingPresence.png", UriKind.Relative);
+                    return image;
+                case 100:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Unrelenting.png", UriKind.Relative);
+                    return image;
+                case 101:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_Whispers.png", UriKind.Relative);
+                    return image;
+                case 102:
+                    image = new(@"/Resources/Killer_Perks/IconPerks_ZanshinTactics.png", UriKind.Relative);
+                    return image;
 
                 default:
                     image = new(@"/Resources/Misc/Transparent_Background.png", UriKind.Relative);

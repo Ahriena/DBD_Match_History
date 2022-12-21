@@ -344,9 +344,8 @@
 
             <TabItem Name="Tab3" Header="Tab3" Height="120">
                 <TabItem.Content>
-                    <TextBlock TextWrapping="WrapWithOverflow">
-        Tab3 property information goes here.
-                    </TextBlock>
+                    <local:Killer_Match/>
+
                 </TabItem.Content>
             </TabItem>
         </TabControl>

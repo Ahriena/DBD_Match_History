@@ -48,6 +48,12 @@ namespace DBD_Match_History
 
             Uri image = new(@"/Resources/Killer_Icons/Twins_Portrait.png", UriKind.Relative);
 
+            Testing.Killer_Portrait.Source = new BitmapImage(Int_To_Killer_Portrait(100));
+
+
+
+
+
             Game1Image.Source = new BitmapImage(Int_To_Killer_Portrait(100));
             Game2Image.Source = new BitmapImage(Int_To_Killer_Portrait(R.Next() % 30));
             Game3Image.Source = new BitmapImage(Int_To_Killer_Portrait(R.Next() % 30));
@@ -60,10 +66,10 @@ namespace DBD_Match_History
             Game10Image.Source = new BitmapImage(Int_To_Killer_Portrait(R.Next() % 30));
 
 
-            Game1Perk1.Source = new BitmapImage(Int_To_Killer_Perk(53));
-            Game1Perk2.Source = new BitmapImage(Int_To_Killer_Perk(54));
-            Game1Perk3.Source = new BitmapImage(Int_To_Killer_Perk(55));
-            Game1Perk4.Source = new BitmapImage(Int_To_Killer_Perk(56));
+            Game1Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game1Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game1Perk3.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
+            Game1Perk4.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
 
             Game2Perk1.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
             Game2Perk2.Source = new BitmapImage(Int_To_Killer_Perk(R.Next() % 103));
