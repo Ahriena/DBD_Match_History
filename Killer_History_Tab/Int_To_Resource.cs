@@ -608,5 +608,138 @@ namespace DBD_Match_History
             }
         }
 
+        static public string Int_To_Map_Name(int input)
+        {
+            /*
+             * 0 = Coal Tower
+             * 1 = Shelter Woods
+             * 2 = Ironworks of Misery
+             * 3 = Suffocation Pit
+             * 4 = Groaning Storehouse
+             * 5 = Rotten Fields
+             * 6 = Rancid Abattoir
+             * 7 = The Thompson House
+             * 8 = Torment Creek
+             * 9 = Fractured Cowshed
+             * 10 = Azarov's Resting Place
+             * 11 = Wreckers' Yard
+             * 12 = Gas Heaven
+             * 13 = Wretched Shop
+             * 14 = Blood Lodge
+             * 15 = Disturbed Ward
+             * 16 = Father Campbell's Chapel
+             * 17 = Lampkin Lane
+             * 18 = Mother's Dwelling
+             * 19 = Treatment Theatre
+             * 20 = The Temple of Purgation
+             * 21 = The Pale Rose
+             * 22 = Grim Pantry
+             * 23 = Badham Preschool I
+             * 24 = Badham Preschool II
+             * 25 = Badham Preschool III
+             * 26 = Badham Preschool IV
+             * 27 = Badham Preschool V
+             * 28 = The Game
+             * 29 = Family Residence
+             * 30 = Sanctum of Wrath
+             * 31 = Mount Ormond Resort
+             * 32 = Dead Dawg Saloon
+             * 33 = Midwich Elementary School
+             * 34 = RPD East
+             * 35 = RPD West
+             * 36 = Eyrie of Crows
+             * 37 = Garden of Joy
+             * 38 = The Shattered Square
+             * 
+             * 
+             * 
+             */
+            switch (input)
+            {
+                case 0:
+                    return "Coal Tower";
+                case 1:
+                    return "Shelter Woods";
+                case 2:
+                    return "Ironworks of Misery";
+                case 3:
+                    return "Suffocation Pit";
+                case 4:
+                    return "Groaning Storehouse";
+                case 5:
+                    return "Rotten Fields";
+                case 6:
+                    return "Rancid Abattoir";
+                case 7:
+                    return "The Thompson House";
+                case 8:
+                    return "Torment Creek";
+                case 9:
+                    return "Fractured Cowshed";
+                case 10:
+                    return "Azarov's Resting Place";
+                case 11:
+                    return "Wreckers' Yard";
+                case 12:
+                    return "Gas Heaven";
+                case 13:
+                    return "Wretched Shop";
+                case 14:
+                    return "Blood Lodge";
+                case 15:
+                    return "Disturbed Ward";
+                case 16:
+                    return "Father Campbell's Chapel";
+                case 17:
+                    return "Lampkin Lane";
+                case 18:
+                    return "Mother's Dwelling";
+                case 19:
+                    return "Treatment Theatre";
+                case 20:
+                    return "The Temple of Purgation";
+                case 21:
+                    return "The Pale Rose";
+                case 22:
+                    return "Grim Pantry";
+                case 23:
+                    return "Badham Preschool I";
+                case 24:
+                    return "Badham Preschool II";
+                case 25:
+                    return "Badham Preschool III";
+                case 26:
+                    return "Badham Preschool IV";
+                case 27:
+                    return "Badham Preschool V";
+                case 28:
+                    return "The Game";
+                case 29:
+                    return "Family Residence";
+                case 30:
+                    return "Sanctum of Wrath";
+                case 31:
+                    return "Mount Ormond Resort";
+                case 32:
+                    return "Dead Dawg Saloon";
+                case 33:
+                    return "Midwich Elementary School";
+                case 34:
+                    return "Raccoon City Police Station East Wing";
+                case 35:
+                    return "Raccoon City Police Station West Wing";
+                case 36:
+                    return "Eyrie of Crows";
+                case 37:
+                    return "Garden of Joy";
+                case 38:
+                    return "The Shattered Square";
+
+
+                default:
+                    return "";
+            }
+        }
+
     }
 }

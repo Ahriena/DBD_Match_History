@@ -37,7 +37,26 @@ namespace DBD_Match_History
             Survivor3.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Fate(R.Next() % 4));
             Survivor4.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Fate(R.Next() % 4));
 
+            DateTime Today= DateTime.Now;
+            DatePlayed.Text = Today.ToString("M/d/yyyy");
+            MapPlayed.Text = Killer_History_Tab.Int_To_Map_Name(R.Next() % 39);
 
+            string Game_Duration1 = (R.Next() % 60).ToString() + ":";
+            int seconds = R.Next() % 60;
+            if (seconds < 10)
+            {
+                Game_Duration1 += "0" + seconds.ToString();
+            }
+            else
+            {
+                Game_Duration1 += seconds.ToString();
+            }
+
+            Game_Duration.Text = Game_Duration1;
+        }
+        public Killer_Match(int input)
+        {
+            InitializeComponent();
         }
     }
 }

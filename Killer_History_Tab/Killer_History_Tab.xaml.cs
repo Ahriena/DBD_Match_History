@@ -29,6 +29,12 @@ namespace DBD_Match_History
         {
             InitializeComponent();
             Change_Stuff();
+            Recent_Killer_Matches.Items.Clear();
+            for (int i = 0; i < 20; i++)
+            {
+                var Test = new Killer_Match();
+                Recent_Killer_Matches.Items.Add(Test);
+            }
         }
 
         // scroll wheel functionality for the scrollviewer object
@@ -42,11 +48,39 @@ namespace DBD_Match_History
         //randomly modifies stuff for testing
         private void Change_Stuff()
         {
-            SolidColorBrush test = new(Colors.DarkBlue);
-            test.Opacity = 0;
+            //SolidColorBrush test = new(Colors.DarkBlue);
+            //test.Opacity = 0;
 
 
 
+
+
+        }
+
+        private void AddItem(object sender, RoutedEventArgs e)
+        {
+            var Test = new Killer_Match();
+            Recent_Killer_Matches.Items.Insert(0, Test);
+
+            while (Recent_Killer_Matches.Items.Count >= 21)
+            {
+                Recent_Killer_Matches.Items.RemoveAt(Recent_Killer_Matches.Items.Count - 1);
+            }
+
+        }
+
+        private void ModItem(object sender, RoutedEventArgs e)
+        {
+            if (Recent_Killer_Matches.Items.Count == 0)
+            {
+                return;
+            }
+            
+            var Test = Recent_Killer_Matches.Items.GetItemAt(0) as Killer_Match;
+
+            Test.Game_Duration.Text = "0";
+
+            //Recent_Killer_Matches.Items.Clear();
 
 
         }

@@ -17,10 +17,11 @@
             <!--   All Killers  -->
             <ComboBoxItem FontSize="20" FontWeight="Bold" VerticalAlignment="Center">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="pack://application:,,,/Resources/Misc/Missing_Person.png" Height="45" Margin="-5,0,0,0"></Image>
+                    <Image Margin="-8,0,0,0" Source="pack://application:,,,/Resources/Misc/Missing_Person.png" Height="50"></Image>
                     <TextBlock Text="All Killers" Margin="15,10,0,0"/>
                 </StackPanel>
             </ComboBoxItem>
+
 
             <!--   Trapper  -->
             <ComboBoxItem FontSize="20" FontWeight="Bold" VerticalAlignment="Center">
@@ -263,28 +264,20 @@
             </ComboBoxItem>
 
         </ComboBox>
-        
-        
-        
+
+        <Button Name="Test" Content="Add Item" Click="AddItem" ClickMode="Press" Height="100" Width="100"/>
+        <Button Name="Test2" Content="Mod Item" Click="ModItem" ClickMode="Press" Height="100" Width="100" Margin="300,0,0,0"/>
+
+
+
+
         <!-- Scrollviewer of recent games-->
-        <ScrollViewer  BorderThickness="0" PreviewMouseWheel="ScrollViewer_MouseWheel" ScrollViewer.CanContentScroll="True" Margin="-200,50,513,10"  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Height="450" Width="500">
+        <ScrollViewer  BorderThickness="0" PreviewMouseWheel="ScrollViewer_MouseWheel" ScrollViewer.CanContentScroll="True" Margin="-200,70,513,10"  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Height="470" Width="500">
             <ScrollViewer.Background>
                 <SolidColorBrush Color="LightGray" Opacity=".2"/>
             </ScrollViewer.Background>
 
-
-            <ListView  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent">
-                <local:Killer_Match x:Name="Game1"/>
-                <local:Killer_Match x:Name="Game2"/>
-                <local:Killer_Match x:Name="Game3"/>
-                <local:Killer_Match x:Name="Game4"/>
-                <local:Killer_Match x:Name="Game5"/>
-                <local:Killer_Match x:Name="Game6"/>
-                <local:Killer_Match x:Name="Game7"/>
-                <local:Killer_Match x:Name="Game8"/>
-                <local:Killer_Match x:Name="Game9"/>
-                <local:Killer_Match x:Name="Game10"/>
-
+            <ListView Name="Recent_Killer_Matches"  ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent">
 
             </ListView>
         </ScrollViewer>

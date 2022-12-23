@@ -8,27 +8,40 @@
              d:DesignHeight="100" d:DesignWidth="470">
     <Grid>
         <!--  Background-->
-        <Rectangle Name="Backdrop" Height="100" Width="470" Fill="Transparent" Stroke="Black"/>
+        <Rectangle Name="Backdrop" Height="140" Width="470" Fill="Transparent" Stroke="Black"/>
 
         <!-- Killer icon-->
-        <Image Name ="Killer_Portrait" Source="Resources/Misc/Transparent_Background.png" Height="110" Width="100" Margin="-400,0,0,0"/>
+        <Image Name ="Killer_Portrait" Source="Resources/Misc/Transparent_Background.png" Height="130" Width="100" Margin="-385,22,0,0"/>
 
         <!-- Perk Backgrounds-->
-        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="-260,-30,0,0"/>
-        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="-125,-30,0,0"/>
-        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="10,-30,0,0"/>
-        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="145,-30,0,0"/>
+        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="-225,-45,0,0"/>
+        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="-90,-45,0,0"/>
+        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="45,-45,0,0"/>
+        <Image Source="pack://application:,,,/Resources/Misc/Perk_Background.png" Height="70" Width="100" Margin="180,-45,0,0"/>
 
         <!-- Perk Images-->
-        <Image Name ="Perk1" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="-260,-30,0,0"/>
-        <Image Name ="Perk2" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="-125,-30,0,0"/>
-        <Image Name ="Perk3" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="10,-30,0,0"/>
-        <Image Name ="Perk4" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="145,-30,0,0"/>
+        <Image Name ="Perk1" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="-225,-45,0,0"/>
+        <Image Name ="Perk2" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="-90,-45,0,0"/>
+        <Image Name ="Perk3" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="45,-45,0,0"/>
+        <Image Name ="Perk4" Source="Resources/Misc/Transparent_Background.png" Height="70" Width="100" Margin="180,-45,0,0"/>
         
         <!-- Survivor fates -->
-        <Image Name ="Survivor1" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Death_Icon.png" Height="40" Width="40" Margin="-195,40,0,0"/>
-        <Image Name ="Survivor2" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Disconnect_Icon.png" Height="40" Width="40" Margin="-58,40,0,0"/>
-        <Image Name ="Survivor3" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Escaped_Icon.png" Height="40" Width="40" Margin="79,40,0,0"/>
-        <Image Name ="Survivor4" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Sacrificed_Icon.png" Height="40" Width="40" Margin="216,40,0,0"/>
+        <Image Name ="Survivor1" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Death_Icon.png" Height="40" Width="40" Margin="-225,80,0,0"/>
+        <Image Name ="Survivor2" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Disconnect_Icon.png" Height="40" Width="40" Margin="-90,80,0,0"/>
+        <Image Name ="Survivor3" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Escaped_Icon.png" Height="40" Width="40" Margin="45,80,0,0"/>
+        <Image Name ="Survivor4" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Sacrificed_Icon.png" Height="40" Width="40" Margin="180,80,0,0"/>
+
+        <!-- Addon Info-->
+        <Image Name ="Addon1_Background" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="50" Width="50" Margin="300,-45,0,0"/>
+        <Image Name ="Addon2_Background" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="50" Width="50" Margin="410,-45,0,0"/>
+
+
+
+        <!-- Text info-->
+        <TextBlock Name="DatePlayed" Text="Test" FontSize="15" Margin="5,8,0,0" FontFamily = "Roboto Light" Foreground="White"/>
+        <TextBlock Name ="Game_Duration" Text="15:27" Margin="0,10,5,0" Width="100" FontSize="15" HorizontalAlignment="Right" FontFamily = "Roboto Light" VerticalAlignment="Top" TextAlignment="Right" Foreground="White" TextWrapping="WrapWithOverflow"/>
+        <TextBlock Name="MapPlayed" Text="Raccoon City Police Station West Wing" Margin="0,0,5,10" Width="110" FontSize="15" HorizontalAlignment="Right" FontFamily = "Roboto Light" VerticalAlignment="Bottom" TextAlignment="Right" Foreground="White" TextWrapping="WrapWithOverflow"/>
+    
+    
     </Grid>
 </UserControl>

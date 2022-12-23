@@ -144,6 +144,11 @@
     <None Remove="Resources\Killer_Perks\IconPerks_Unrelenting.png" />
     <None Remove="Resources\Killer_Perks\IconPerks_Whispers.png" />
     <None Remove="Resources\Killer_Perks\IconPerks_ZanshinTactics.png" />
+    <None Remove="Resources\Misc\Addon_Backgrounds\Background_Common.png" />
+    <None Remove="Resources\Misc\Addon_Backgrounds\Background_Rare.png" />
+    <None Remove="Resources\Misc\Addon_Backgrounds\Background_Ultra_Rare.png" />
+    <None Remove="Resources\Misc\Addon_Backgrounds\Background_Uncommon.png" />
+    <None Remove="Resources\Misc\Addon_Backgrounds\Background_Very_Rare.png" />
     <None Remove="Resources\Misc\Campfire_Background.png" />
     <None Remove="Resources\Misc\DBD_Fog_Background.png" />
     <None Remove="Resources\Misc\Game_Outcomes\Death_Icon.png" />
@@ -306,6 +311,11 @@
     <Resource Include="Resources\Killer_Perks\IconPerks_Unrelenting.png" />
     <Resource Include="Resources\Killer_Perks\IconPerks_Whispers.png" />
     <Resource Include="Resources\Killer_Perks\IconPerks_ZanshinTactics.png" />
+    <Resource Include="Resources\Misc\Addon_Backgrounds\Background_Common.png" />
+    <Resource Include="Resources\Misc\Addon_Backgrounds\Background_Rare.png" />
+    <Resource Include="Resources\Misc\Addon_Backgrounds\Background_Ultra_Rare.png" />
+    <Resource Include="Resources\Misc\Addon_Backgrounds\Background_Uncommon.png" />
+    <Resource Include="Resources\Misc\Addon_Backgrounds\Background_Very_Rare.png" />
     <Resource Include="Resources\Misc\Campfire_Background.png" />
     <Resource Include="Resources\Misc\DBD_Fog_Background.png" />
     <Resource Include="Resources\Misc\Game_Outcomes\Death_Icon.png" />
