@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace DBD_Match_History
 {
-    /// <summary>
-    /// Interaction logic for UserControl1.xaml
-    /// </summary>
     public partial class Killer_Match : UserControl
     {
         Random R = new Random();
@@ -53,10 +50,6 @@ namespace DBD_Match_History
             }
 
             Game_Duration.Text = Game_Duration1;
-        }
-        public Killer_Match(int input)
-        {
-            InitializeComponent();
         }
     }
 }

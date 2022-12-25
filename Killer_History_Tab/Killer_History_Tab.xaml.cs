@@ -28,13 +28,18 @@ namespace DBD_Match_History
         public Killer_History_Tab()
         {
             InitializeComponent();
-            Change_Stuff();
             Recent_Killer_Matches.Items.Clear();
             for (int i = 0; i < 20; i++)
             {
                 var Test = new Killer_Match();
                 Recent_Killer_Matches.Items.Add(Test);
             }
+
+            Player1.Survivor_Character();
+            Player2.Survivor_Character();
+            Player3.Survivor_Character();
+            Player4.Survivor_Character();
+            Player5.Killer_Character();
         }
 
         // scroll wheel functionality for the scrollviewer object
@@ -43,18 +48,6 @@ namespace DBD_Match_History
             ScrollViewer scv = (ScrollViewer)sender;
             scv.ScrollToVerticalOffset(scv.VerticalOffset - e.Delta);
             e.Handled = true;
-        }
-
-        //randomly modifies stuff for testing
-        private void Change_Stuff()
-        {
-            //SolidColorBrush test = new(Colors.DarkBlue);
-            //test.Opacity = 0;
-
-
-
-
-
         }
 
         private void AddItem(object sender, RoutedEventArgs e)
@@ -68,6 +61,7 @@ namespace DBD_Match_History
             }
 
         }
+
 
         private void ModItem(object sender, RoutedEventArgs e)
         {

@@ -7,8 +7,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Killer_Icon.png" />
+
+	<ItemGroup>
+
+	<None Remove="Killer_Icon.png" />
     <None Remove="Killer_Icon_Inverted.png" />
     <None Remove="Resources\Killer_Icons\Artist_Portrait.png" />
     <None Remove="Resources\Killer_Icons\Blight_Portrait.png" />
@@ -157,8 +159,51 @@
     <None Remove="Resources\Misc\Game_Outcomes\Sacrificed_Icon.png" />
     <None Remove="Resources\Misc\Inverted_Missing_Person.png" />
     <None Remove="Resources\Misc\Missing_Person.png" />
+    <None Remove="Resources\Misc\Offering_Background.png" />
     <None Remove="Resources\Misc\Perk_Background.png" />
     <None Remove="Resources\Misc\Transparent_Background.png" />
+    <None Remove="Resources\Survivor_Icons\Ace_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Adam_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Ada_portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Ash_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Bill_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Carlos_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Cheryl_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Chris_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Claire_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Claudette_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Cybil_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\David_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Dwight_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Elodie_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Felix_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Feng_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Haddie_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Jake_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\James_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Jane_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Jeff_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Jill_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Jonah_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Jonathan_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Kate_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Laurie_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Leon_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Lisa_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Meg_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Mikaela_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Nancy_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Nea_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Quentin_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Rebecca_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Sheva_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Steve_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Tapp_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Vittorio_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Yoichi_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Yui_Portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Yun-Jin_portrait.png" />
+    <None Remove="Resources\Survivor_Icons\Zarena_Portrait.png" />
     <None Remove="Survivor_Icon.png" />
     <None Remove="Survivor_Icon_Inverted.png" />
   </ItemGroup>
@@ -316,6 +361,7 @@
     <Resource Include="Resources\Misc\Addon_Backgrounds\Background_Ultra_Rare.png" />
     <Resource Include="Resources\Misc\Addon_Backgrounds\Background_Uncommon.png" />
     <Resource Include="Resources\Misc\Addon_Backgrounds\Background_Very_Rare.png" />
+    <Resource Include="Resources\Misc\Offering_Background.png" />
     <Resource Include="Resources\Misc\Campfire_Background.png" />
     <Resource Include="Resources\Misc\DBD_Fog_Background.png" />
     <Resource Include="Resources\Misc\Game_Outcomes\Death_Icon.png" />
@@ -341,6 +387,76 @@
     <Resource Include="Resources\Misc\Killer_Icon_Inverted.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Survivor_Icons\Ace_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Adam_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Ada_portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Ash_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Bill_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Carlos_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Cheryl_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Chris_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Claire_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Claudette_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Cybil_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\David_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Dwight_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Elodie_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Felix_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Feng_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Haddie_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Jake_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\James_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Jane_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Jeff_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Jill_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Jonah_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Jonathan_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Kate_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Laurie_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Leon_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Lisa_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Meg_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Mikaela_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Nancy_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Nea_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Quentin_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Rebecca_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Sheva_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Steve_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Tapp_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Vittorio_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Yoichi_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Yui_Portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Yun-Jin_portrait.png" />
+    <Resource Include="Resources\Survivor_Icons\Zarena_Portrait.png" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 
 </Project>

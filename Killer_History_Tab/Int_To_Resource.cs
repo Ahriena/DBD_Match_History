@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DBD_Match_History
 {
@@ -143,6 +144,400 @@ namespace DBD_Match_History
                     return image;
             }
         }
+
+        // converts an int into the associated killer portrait
+        static public string Int_To_Killer_Name(int input)
+        {
+            /* 
+             *  0 = Trapper
+             *  1 = Wraith
+             *  2 = Hillbilly
+             *  3 = Nurse
+             *  4 = Huntress
+             *  5 = Myers
+             *  6 = Hag
+             *  7 = Doctor
+             *  8 = Bubba
+             *  9 = Freddy
+             * 10 = Pig
+             * 11 = Clown
+             * 12 = Spirit
+             * 13 = Legion
+             * 14 = Plague
+             * 15 = Ghostface
+             * 16 = Demogorgon
+             * 17 = Oni
+             * 18 = Deathslinger
+             * 19 = Pyramid Head
+             * 20 = Blight
+             * 21 = Twins
+             * 22 = Trickster
+             * 23 = Nemesis
+             * 24 = Pinhead
+             * 25 = Artist
+             * 26 = Onryo
+             * 27 = Dredge
+             * 28 = Wesker
+             * 29 = Knight
+             */
+
+            Uri image;
+            switch (input)
+            {
+                case 0:
+                    return "The Trapper";
+                case 1:
+                    return "The Wraith";
+                case 2:
+                    return "The Hillbilly";
+                case 3:
+                    return "The Nurse";
+                case 4:
+                    return "The Huntress";
+                case 5:
+                    return "The Shape";
+                case 6:
+                    return "The Hag";
+                case 7:
+                    return "The Doctor";
+                case 8:
+                    return "The Cannibal";
+                case 9:
+                    return "The Nightmare";
+                case 10:
+                    return "The Pig";
+                case 11:
+                    return "The Clown";
+                case 12:
+                    return "The Spirit";
+                case 13:
+                    return "The Legion";
+                case 14:
+                    return "The Plague";
+                case 15:
+                    return "The Ghost Face";
+                case 16:
+                    return "The Demogorgon";
+                case 17:
+                    return "The Oni";
+                case 18:
+                    return "The Deathslinger";
+                case 19:
+                    return "The Executioner";
+                case 20:
+                    return "The Blight";
+                case 21:
+                    return "The Twins";
+                case 22:
+                    return "The Trickster";
+                case 23:
+                    return "The Nemesis";
+                case 24:
+                    return "The Cenobite";
+                case 25:
+                    return "The Artist";
+                case 26:
+                    return "The Onryo";
+                case 27:
+                    return "The Dredge";
+                case 28:
+                    return "The Mastermind";
+                case 29:
+                    return "The Knight";
+                default:
+                    return "";
+            }
+        }
+
+
+
+        static public Uri Int_To_Survivor_Portrait(int input)
+        {
+            /* Set in the random order my half-unlocked characters were sorted in
+             * 
+             * 0 = Dwight
+             * 1 = Meg
+             * 2 = Claudette
+             * 3 = Jake
+             * 4 = Nea
+             * 5 = Bill
+             * 6 = David
+             * 7 = Laurie
+             * 8 = Feng
+             * 9 = Quentin
+             * 10 = Detective Tapp
+             * 11 = Kate
+             * 12 = Adam
+             * 13 = Yui
+             * 14 = Zarena
+             * 15 = Cheryl
+             * 16 = Felix
+             * 17 = Jill
+             * 18 = Leon
+             * 19 = Yoichi
+             * 20 = Haddie 
+             * 21 = Ada
+             * 22 = Rebecca
+             * 23 = Vittorio
+             * 24 = Jonah
+             * 25 = Mikaela 
+             * 26 = Yun-Jin
+             * 27 = Elodie 
+             * 28 = Ash
+             * 29 = Jane
+             * 30 = Jeff
+             * 31 = Ace
+             * 32 = Nancy
+             * 33 = Steve
+             * 34 = Jonathan
+             * 35 = Chris 
+             * 36 = Claire
+             * 37 = Carlos
+             * 38 = Cybil
+             * 39 = James
+             * 40 = Lisa
+             * 41 = Sheva
+             * 
+             * 
+             */
+            
+            
+            
+            
+            
+            Uri image;
+
+            switch (input)
+            {
+                case 0:
+                    image = new(@"/Resources/Survivor_Icons/Dwight_Portrait.png", UriKind.Relative);
+                    return image;
+                case 1:
+                    image = new(@"/Resources/Survivor_Icons/Meg_Portrait.png", UriKind.Relative);
+                    return image;
+                case 2:
+                    image = new(@"/Resources/Survivor_Icons/Claudette_Portrait.png", UriKind.Relative);
+                    return image;
+                case 3:
+                    image = new(@"/Resources/Survivor_Icons/Jake_Portrait.png", UriKind.Relative);
+                    return image;
+                case 4:
+                    image = new(@"/Resources/Survivor_Icons/Nea_Portrait.png", UriKind.Relative);
+                    return image;
+                case 5:
+                    image = new(@"/Resources/Survivor_Icons/Bill_Portrait.png", UriKind.Relative);
+                    return image;
+                case 6:
+                    image = new(@"/Resources/Survivor_Icons/David_Portrait.png", UriKind.Relative);
+                    return image;
+                case 7:
+                    image = new(@"/Resources/Survivor_Icons/Laurie_Portrait.png", UriKind.Relative);
+                    return image;
+                case 8:
+                    image = new(@"/Resources/Survivor_Icons/Feng_Portrait.png", UriKind.Relative);
+                    return image;
+                case 9:
+                    image = new(@"/Resources/Survivor_Icons/Quentin_Portrait.png", UriKind.Relative);
+                    return image;
+                case 10:
+                    image = new(@"/Resources/Survivor_Icons/Tapp_Portrait.png", UriKind.Relative);
+                    return image;
+                case 11:
+                    image = new(@"/Resources/Survivor_Icons/Kate_Portrait.png", UriKind.Relative);
+                    return image;
+                case 12:
+                    image = new(@"/Resources/Survivor_Icons/Adam_Portrait.png", UriKind.Relative);
+                    return image;
+                case 13:
+                    image = new(@"/Resources/Survivor_Icons/Yui_Portrait.png", UriKind.Relative);
+                    return image;
+                case 14:
+                    image = new(@"/Resources/Survivor_Icons/Zarena_Portrait.png", UriKind.Relative);
+                    return image;
+                case 15:
+                    image = new(@"/Resources/Survivor_Icons/Cheryl_Portrait.png", UriKind.Relative);
+                    return image;
+                case 16:
+                    image = new(@"/Resources/Survivor_Icons/Felix_Portrait.png", UriKind.Relative);
+                    return image;
+                case 17:
+                    image = new(@"/Resources/Survivor_Icons/Jill_Portrait.png", UriKind.Relative);
+                    return image;
+                case 18:
+                    image = new(@"/Resources/Survivor_Icons/Leon_Portrait.png", UriKind.Relative);
+                    return image;
+                case 19:
+                    image = new(@"/Resources/Survivor_Icons/Yoichi_Portrait.png", UriKind.Relative);
+                    return image;
+                case 20:
+                    image = new(@"/Resources/Survivor_Icons/Haddie_Portrait.png", UriKind.Relative);
+                    return image;
+                case 21:
+                    image = new(@"/Resources/Survivor_Icons/Ada_Portrait.png", UriKind.Relative);
+                    return image;
+                case 22:
+                    image = new(@"/Resources/Survivor_Icons/Rebecca_Portrait.png", UriKind.Relative);
+                    return image;
+                case 23:
+                    image = new(@"/Resources/Survivor_Icons/Vittorio_Portrait.png", UriKind.Relative);
+                    return image;
+                case 24:
+                    image = new(@"/Resources/Survivor_Icons/Jonah_Portrait.png", UriKind.Relative);
+                    return image;
+                case 25:
+                    image = new(@"/Resources/Survivor_Icons/Mikaela_Portrait.png", UriKind.Relative);
+                    return image;
+                case 26:
+                    image = new(@"/Resources/Survivor_Icons/Yun-Jin_Portrait.png", UriKind.Relative);
+                    return image;
+                case 27:
+                    image = new(@"/Resources/Survivor_Icons/Elodie_Portrait.png", UriKind.Relative);
+                    return image;
+                case 28:
+                    image = new(@"/Resources/Survivor_Icons/Ash_Portrait.png", UriKind.Relative);
+                    return image;
+                case 29:
+                    image = new(@"/Resources/Survivor_Icons/Jane_Portrait.png", UriKind.Relative);
+                    return image;
+                case 30:
+                    image = new(@"/Resources/Survivor_Icons/Jeff_Portrait.png", UriKind.Relative);
+                    return image;
+                case 31:
+                    image = new(@"/Resources/Survivor_Icons/Ace_Portrait.png", UriKind.Relative);
+                    return image;
+                case 32:
+                    image = new(@"/Resources/Survivor_Icons/Nancy_Portrait.png", UriKind.Relative);
+                    return image;
+                case 33:
+                    image = new(@"/Resources/Survivor_Icons/Steve_Portrait.png", UriKind.Relative);
+                    return image;
+                case 34:
+                    image = new(@"/Resources/Survivor_Icons/Jonathan_Portrait.png", UriKind.Relative);
+                    return image;
+                case 35:
+                    image = new(@"/Resources/Survivor_Icons/Chris_Portrait.png", UriKind.Relative);
+                    return image;
+                case 36:
+                    image = new(@"/Resources/Survivor_Icons/Claire_Portrait.png", UriKind.Relative);
+                    return image;
+                case 37:
+                    image = new(@"/Resources/Survivor_Icons/Carlos_Portrait.png", UriKind.Relative);
+                    return image;
+                case 38:
+                    image = new(@"/Resources/Survivor_Icons/Cybil_Portrait.png", UriKind.Relative);
+                    return image;
+                case 39:
+                    image = new(@"/Resources/Survivor_Icons/James_Portrait.png", UriKind.Relative);
+                    return image;
+                case 40:
+                    image = new(@"/Resources/Survivor_Icons/Lisa_Portrait.png", UriKind.Relative);
+                    return image;
+                case 41:
+                    image = new(@"/Resources/Survivor_Icons/Sheva_Portrait.png", UriKind.Relative);
+                    return image;
+
+                default:
+                    image = new(@"/Resources/Misc/Missing_Person.png", UriKind.Relative);
+                    return image;
+
+            }
+        }
+
+        static public string Int_To_Survivor_Name(int input)
+        {
+            switch (input)
+            {
+                case 0:
+                    return "Dwight Fairfield";
+                case 1:
+                    return "Meg Thomas";
+                case 2:
+                    return "Claudette Morel";
+                case 3:
+                    return "Jake Park";
+                case 4:
+                    return "Nea Karllson";
+                case 5:
+                    return "William \"Bill\" Overbeck";
+                case 6:
+                    return "David King";
+                case 7:
+                    return "Laurie Strode";
+                case 8:
+                    return "Feng Min";
+                case 9:
+                    return "Quentin Smith";
+                case 10:
+                    return "Detective Tapp";
+                case 11:
+                    return "Kate Denson";
+                case 12:
+                    return "Adam Francis";
+                case 13:
+                    return "Yui Kimura";
+                case 14:
+                    return "Zarina Kassir";
+                case 15:
+                    return "Cheryl Mason";
+                case 16:
+                    return "Felix Richter";
+                case 17:
+                    return "Jill Valentine";
+                case 18:
+                    return "Leon S. Kennedy";
+                case 19:
+                    return "Yoichi Asakawa";
+                case 20:
+                    return "Haddie Kaur";
+                case 21:
+                    return "Ada Wong";
+                case 22:
+                    return "Rebecca Chambers";
+                case 23:
+                    return "Vittorio Toscano";
+                case 24:
+                    return "Jonah Vasquez";
+                case 25:
+                    return "Mikaela Reid";
+                case 26:
+                    return "Yun-Jin Lee";
+                case 27:
+                    return "Elodie Rakoto";
+                case 28:
+                    return "Ashley J. Williams";
+                case 29:
+                    return "Jane Romero";
+                case 30:
+                    return "Jeff Johansen";
+                case 31:
+                    return "Ace Visconti";
+                case 32:
+                    return "Nancy Wheeler";
+                case 33:
+                    return "Steve Harrington";
+                case 34:
+                    return "Jonathan Byers";
+                case 35:
+                    return "Chris Redfield";
+                case 36:
+                    return "Claire Redfield";
+                case 37:
+                    return "Carlos Oliveira";
+                case 38:
+                    return "Cybil Bennett";
+                case 39:
+                    return "James Sunderland";
+                case 40:
+                    return "Lisa Garland";
+                case 41:
+                    return "Sheva Alomar";
+
+                default:
+                    return "";
+            }
+        }
+
+
 
         // converts int to survivor fate icon
         static public Uri Int_To_Survivor_Fate(int input)
