@@ -204,6 +204,10 @@
     <None Remove="Resources\Survivor_Icons\Yui_Portrait.png" />
     <None Remove="Resources\Survivor_Icons\Yun-Jin_portrait.png" />
     <None Remove="Resources\Survivor_Icons\Zarena_Portrait.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_AceInTheHole.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_Adrenaline.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_Aftercare.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_Alert.png" />
     <None Remove="Survivor_Icon.png" />
     <None Remove="Survivor_Icon_Inverted.png" />
   </ItemGroup>
@@ -429,6 +433,10 @@
     <Resource Include="Resources\Survivor_Icons\Yui_Portrait.png" />
     <Resource Include="Resources\Survivor_Icons\Yun-Jin_portrait.png" />
     <Resource Include="Resources\Survivor_Icons\Zarena_Portrait.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_AceInTheHole.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_Adrenaline.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_Aftercare.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_Alert.png" />
   </ItemGroup>
 
   <ItemGroup>

@@ -17,7 +17,7 @@ namespace DBD_Match_History
 {
     public partial class Killer_Match : UserControl
     {
-        Random R = new Random();
+        readonly Random R = new();
 
         public Killer_Match()
         {

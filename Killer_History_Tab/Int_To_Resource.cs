@@ -181,7 +181,6 @@ namespace DBD_Match_History
              * 29 = Knight
              */
 
-            Uri image;
             switch (input)
             {
                 case 0:
@@ -534,6 +533,43 @@ namespace DBD_Match_History
 
                 default:
                     return "";
+            }
+        }
+
+        static public Uri Int_To_Survivor_Perk(int input)
+        {
+            /*
+             * 0 = Ace In The Hole 
+             * 1 = Adrenaline
+             * 2 = Aftercare
+             * 3 = Alert
+             * 
+             * 
+             * 
+             * 
+             * 
+             */
+            
+            Uri image;
+
+            switch(input)
+            {
+                case 0:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_AceInTheHole.png", UriKind.Relative);
+                    return image;
+                case 1:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Adrenaline.png", UriKind.Relative);
+                    return image;
+                case 2:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Aftercare.png", UriKind.Relative);
+                    return image;
+                case 3:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Alert.png", UriKind.Relative);
+                    return image;
+
+                default:
+                    image = new(@"/Resources/Misc/Missing_Person.png", UriKind.Relative);
+                    return image;
             }
         }
 
