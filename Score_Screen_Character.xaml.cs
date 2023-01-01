@@ -21,6 +21,7 @@ namespace DBD_Match_History
     public partial class Score_Screen_Character : UserControl
     {
         Random R = new Random();
+        Data data = new Data();
 
         public Score_Screen_Character()
         {
@@ -31,26 +32,26 @@ namespace DBD_Match_History
         {
             int Index = (R.Next() % 42);
 
-            Portrait.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Portrait(Index));
-            Character_Name.Text = Killer_History_Tab.Int_To_Survivor_Name(Index);
+            Portrait.Source = new BitmapImage(data.Int_To_Survivor_Portrait(Index));
+            Character_Name.Text = data.Int_To_Survivor_Name(Index);
 
-            Perk1.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Perk(0));
-            Perk2.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Perk(1));
-            Perk3.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Perk(2));
-            Perk4.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Perk(3));
+            Perk1.Source = new BitmapImage(data.Int_To_Survivor_Perk(12));
+            Perk2.Source = new BitmapImage(data.Int_To_Survivor_Perk(13));
+            Perk3.Source = new BitmapImage(data.Int_To_Survivor_Perk(14));
+            Perk4.Source = new BitmapImage(data.Int_To_Survivor_Perk(15));
         }
         public void Killer_Character()
         {
             int Index = (R.Next() % 30);
 
-            Portrait.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Portrait(Index));
-            Character_Name.Text = Killer_History_Tab.Int_To_Killer_Name(Index);
+            Portrait.Source = new BitmapImage(data.Int_To_Killer_Portrait(Index));
+            Character_Name.Text = data.Int_To_Killer_Name(Index);
             Character_Name.Foreground = Brushes.Red;
 
-            Perk1.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Perk(R.Next() % 103));
-            Perk2.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Perk(R.Next() % 103));
-            Perk3.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Perk(R.Next() % 103));
-            Perk4.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Perk(R.Next() % 103));
+            Perk1.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
+            Perk2.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
+            Perk3.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
+            Perk4.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
 
 
         }

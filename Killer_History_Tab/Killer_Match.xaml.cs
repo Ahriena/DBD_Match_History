@@ -18,25 +18,26 @@ namespace DBD_Match_History
     public partial class Killer_Match : UserControl
     {
         readonly Random R = new();
+        Data data = new Data();
 
         public Killer_Match()
         {
             InitializeComponent();
-            Killer_Portrait.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Portrait(R.Next() % 30));
+            Killer_Portrait.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
 
-            Perk1.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Perk(R.Next() % 103));
-            Perk2.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Perk(R.Next() % 103));
-            Perk3.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Perk(R.Next() % 103));
-            Perk4.Source = new BitmapImage(Killer_History_Tab.Int_To_Killer_Perk(R.Next() % 103));
+            Perk1.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
+            Perk2.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
+            Perk3.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
+            Perk4.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
 
-            Survivor1.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Fate(R.Next() % 4));
-            Survivor2.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Fate(R.Next() % 4));
-            Survivor3.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Fate(R.Next() % 4));
-            Survivor4.Source = new BitmapImage(Killer_History_Tab.Int_To_Survivor_Fate(R.Next() % 4));
+            Survivor1.Source = new BitmapImage(data.Int_To_Survivor_Fate(R.Next() % 4));
+            Survivor2.Source = new BitmapImage(data.Int_To_Survivor_Fate(R.Next() % 4));
+            Survivor3.Source = new BitmapImage(data.Int_To_Survivor_Fate(R.Next() % 4));
+            Survivor4.Source = new BitmapImage(data.Int_To_Survivor_Fate(R.Next() % 4));
 
             DateTime Today= DateTime.Now;
             DatePlayed.Text = Today.ToString("M/d/yyyy");
-            MapPlayed.Text = Killer_History_Tab.Int_To_Map_Name(R.Next() % 39);
+            MapPlayed.Text = data.Int_To_Map_Name(R.Next() % 39);
 
             string Game_Duration1 = (R.Next() % 60).ToString() + ":";
             int seconds = R.Next() % 60;

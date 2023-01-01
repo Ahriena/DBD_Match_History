@@ -8,10 +8,10 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace DBD_Match_History
 {
-    public partial class Killer_History_Tab : UserControl
+    public class Data
     {
         // converts an int into the associated killer portrait
-        static public Uri Int_To_Killer_Portrait(int input)
+        public Uri Int_To_Killer_Portrait(int input)
         {
             /* 
              *  0 = Trapper
@@ -146,7 +146,7 @@ namespace DBD_Match_History
         }
 
         // converts an int into the associated killer portrait
-        static public string Int_To_Killer_Name(int input)
+        public string Int_To_Killer_Name(int input)
         {
             /* 
              *  0 = Trapper
@@ -250,7 +250,7 @@ namespace DBD_Match_History
 
 
 
-        static public Uri Int_To_Survivor_Portrait(int input)
+        public Uri Int_To_Survivor_Portrait(int input)
         {
             /* Set in the random order my half-unlocked characters were sorted in
              * 
@@ -442,7 +442,7 @@ namespace DBD_Match_History
             }
         }
 
-        static public string Int_To_Survivor_Name(int input)
+        public string Int_To_Survivor_Name(int input)
         {
             switch (input)
             {
@@ -536,13 +536,34 @@ namespace DBD_Match_History
             }
         }
 
-        static public Uri Int_To_Survivor_Perk(int input)
+        public Uri Int_To_Survivor_Perk(int input)
         {
             /*
              * 0 = Ace In The Hole 
              * 1 = Adrenaline
              * 2 = Aftercare
              * 3 = Alert
+             * 4 = Any Means Necessary
+             * 5 = Appraisal
+             * 6 = Autodidact
+             * 7 = Balanced Landing
+             * 8 = Better Than New
+             * 9 = Bite the Bullet
+             * 10 = Blast Mine
+             * 11 = Blood Pact
+             * 12 = Boil Over
+             * 13 = Boon: Circle of Healing
+             * 14 = Boon: Dark Theory
+             * 15 = Boon: Exponential
+             * 16 = Boon: Shadow Step
+             * 17 = Bond
+             * 18 = Borrowed Time
+             * 19 = Botany Knowledge
+             * 
+             * 
+             * 
+             * 
+             * 
              * 
              * 
              * 
@@ -566,9 +587,45 @@ namespace DBD_Match_History
                 case 3:
                     image = new(@"/Resources/Survivor_Perks/IconPerks_Alert.png", UriKind.Relative);
                     return image;
+                case 4:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_AnyMeansNecessary.png", UriKind.Relative);
+                    return image;
+                case 5:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Appraisal.png", UriKind.Relative);
+                    return image;
+                case 6:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Autodidact.png", UriKind.Relative);
+                    return image;
+                case 7:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BalancedLanding.png", UriKind.Relative);
+                    return image;
+                case 8:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BetterThanNew.png", UriKind.Relative);
+                    return image;
+                case 9:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BiteTheBullet.png", UriKind.Relative);
+                    return image;
+                case 10:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BlastMine.png", UriKind.Relative);
+                    return image;
+                case 11:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BloodPact.png", UriKind.Relative);
+                    return image;
+                case 12:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BoilOver.png", UriKind.Relative);
+                    return image;
+                case 13:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BoonCircleOfHealing.png", UriKind.Relative);
+                    return image;
+                case 14:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BoonDarkTheory.png", UriKind.Relative);
+                    return image;
+                case 15:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BoonExponential.png", UriKind.Relative);
+                    return image;
 
                 default:
-                    image = new(@"/Resources/Misc/Missing_Person.png", UriKind.Relative);
+                    image = new(@"/Resources/Misc/Transparent_Background.png", UriKind.Relative);
                     return image;
             }
         }
@@ -576,7 +633,7 @@ namespace DBD_Match_History
 
 
         // converts int to survivor fate icon
-        static public Uri Int_To_Survivor_Fate(int input)
+        public Uri Int_To_Survivor_Fate(int input)
         {
             // 0 = DC
             // 1 = Escaped
@@ -607,7 +664,7 @@ namespace DBD_Match_History
         }
 
         // converts an int into the associated killer portrait
-        static public Uri Int_To_Killer_Perk(int input)
+        public Uri Int_To_Killer_Perk(int input)
         {
             /*  ALPHABETICAL ORDER THROUGH KNIGHT RELEASE, THEN IN RELEASE ORDER
              *  Mostly because I can't be fucked to change every one every time a new character comes out
@@ -1039,7 +1096,7 @@ namespace DBD_Match_History
             }
         }
 
-        static public string Int_To_Map_Name(int input)
+        public string Int_To_Map_Name(int input)
         {
             /*
              * 0 = Coal Tower

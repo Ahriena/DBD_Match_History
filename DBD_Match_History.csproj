@@ -208,6 +208,18 @@
     <None Remove="Resources\Survivor_Perks\IconPerks_Adrenaline.png" />
     <None Remove="Resources\Survivor_Perks\IconPerks_Aftercare.png" />
     <None Remove="Resources\Survivor_Perks\IconPerks_Alert.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_AnyMeansNecessary.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_Appraisal.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_Autodidact.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BalancedLanding.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BetterThanNew.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BiteTheBullet.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BlastMine.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BloodPact.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BoilOver.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BoonCircleOfHealing.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BoonDarkTheory.png" />
+    <None Remove="Resources\Survivor_Perks\IconPerks_BoonExponential.png" />
     <None Remove="Survivor_Icon.png" />
     <None Remove="Survivor_Icon_Inverted.png" />
   </ItemGroup>
@@ -437,6 +449,18 @@
     <Resource Include="Resources\Survivor_Perks\IconPerks_Adrenaline.png" />
     <Resource Include="Resources\Survivor_Perks\IconPerks_Aftercare.png" />
     <Resource Include="Resources\Survivor_Perks\IconPerks_Alert.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_AnyMeansNecessary.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_Appraisal.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_Autodidact.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BalancedLanding.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BetterThanNew.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BiteTheBullet.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BlastMine.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BloodPact.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BoilOver.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BoonCircleOfHealing.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BoonDarkTheory.png" />
+    <Resource Include="Resources\Survivor_Perks\IconPerks_BoonExponential.png" />
   </ItemGroup>
 
   <ItemGroup>
