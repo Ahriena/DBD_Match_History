@@ -43,7 +43,5 @@ namespace DBD_Match_History
 
         DateTime Date_Played;
         DateTime Time_Played;
-
-
     }   
 }

@@ -40,6 +40,7 @@ namespace DBD_Match_History
             Perk3.Source = new BitmapImage(data.Int_To_Survivor_Perk(14));
             Perk4.Source = new BitmapImage(data.Int_To_Survivor_Perk(15));
         }
+
         public void Killer_Character()
         {
             int Index = (R.Next() % 30);
