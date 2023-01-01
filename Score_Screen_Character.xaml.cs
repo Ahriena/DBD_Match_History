@@ -35,10 +35,10 @@ namespace DBD_Match_History
             Portrait.Source = new BitmapImage(data.Int_To_Survivor_Portrait(Index));
             Character_Name.Text = data.Int_To_Survivor_Name(Index);
 
-            Perk1.Source = new BitmapImage(data.Int_To_Survivor_Perk(12));
-            Perk2.Source = new BitmapImage(data.Int_To_Survivor_Perk(13));
-            Perk3.Source = new BitmapImage(data.Int_To_Survivor_Perk(14));
-            Perk4.Source = new BitmapImage(data.Int_To_Survivor_Perk(15));
+            Perk1.Source = new BitmapImage(data.Int_To_Survivor_Perk(R.Next() % 116));
+            Perk2.Source = new BitmapImage(data.Int_To_Survivor_Perk(R.Next() % 116));
+            Perk3.Source = new BitmapImage(data.Int_To_Survivor_Perk(R.Next() % 116));
+            Perk4.Source = new BitmapImage(data.Int_To_Survivor_Perk(R.Next() % 116));
         }
 
         public void Killer_Character()
@@ -54,6 +54,7 @@ namespace DBD_Match_History
             Perk3.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
             Perk4.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
 
+            Outcome.Source = new BitmapImage(data.Int_To_Survivor_Fate(4));
 
         }
     }

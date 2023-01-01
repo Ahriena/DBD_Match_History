@@ -23,7 +23,7 @@ namespace DBD_Match_History
         public Killer_Match()
         {
             InitializeComponent();
-            Killer_Portrait.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
+            Killer_Portrait.Source = new BitmapImage(data.Int_To_Killer_Portrait(R.Next() % 30));
 
             Perk1.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
             Perk2.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));

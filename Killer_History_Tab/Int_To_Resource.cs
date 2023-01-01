@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
@@ -559,7 +561,102 @@ namespace DBD_Match_History
              * 17 = Bond
              * 18 = Borrowed Time
              * 19 = Botany Knowledge
-             * 
+             * 20 = Breakdown
+             * 21 = Breakout
+             * 22 = Buckle Up
+             * 23 = Built To Last
+             * 24 = Calm Spirit
+             * 25 = Corrective action
+             * 26 = Counterforce
+             * 27 = Clairvoyance
+             * 28 = Dance With Me
+             * 29 = Dark Sense
+             * 30 = Dead Hard
+             * 31 = Deception
+             * 32 = Decisive Strike
+             * 33 = Deja Vu
+             * 34 = Deliverance
+             * 35 = Desperate Measures
+             * 36 = Detective's Hunch
+             * 37 = Distortion
+             * 38 = Diversion
+             * 39 = Empathic Connection
+             * 40 = Empathy
+             * 41 = Fast Track
+             * 42 = Flashbang
+             * 43 = Flip-Flop
+             * 44 = Fogwise
+             * 45 = For The People
+             * 46 = Guardian
+             * 47 = Head On
+             * 48 = Hope
+             * 49 = Hyperfocus
+             * 50 = Inner Focus
+             * 51 = Inner Healing
+             * 52 = Iron Will
+             * 53 = Kindred
+             * 54 = Kinship
+             * 55 = Leader
+             * 56 = Left Behind
+             * 57 = Lightweight
+             * 58 = Lithe
+             * 59 = Low Profile
+             * 60 = Lucky Break
+             * 61 = Mettle of man
+             * 62 = No Mither
+             * 63 = No One Left Behind
+             * 64 = Object of Obsession
+             * 65 = Off The Record
+             * 66 = Open-Handed
+             * 67 = Overcome
+             * 68 = Overzealous
+             * 69 = Parental Guidance
+             * 70 = Pharmacy
+             * 71 = Plunderer's Instinct
+             * 72 = Poised
+             * 73 = Potential Energy
+             * 74 = Power Struggle
+             * 75 = Premonition
+             * 76 = Prove Thyself
+             * 77 = Quick Gambit
+             * 78 = Quick and Quiet
+             * 79 = Reactive Healing
+             * 80 = Reassurance
+             * 81 = Red Herring
+             * 82 = Renewal
+             * 83 = Repressed Alliance
+             * 84 = Residual Manifest
+             * 85 = Resilience
+             * 86 = Resurgence
+             * 87 = Rookie Spirit
+             * 88 = Saboteur
+             * 89 = Self-Aware
+             * 90 = Self-Care
+             * 91 = Self-Preservation
+             * 92 = Situational Awareness
+             * 93 = Slippery Meat
+             * 94 = Small Game
+             * 95 = Smash Hit
+             * 96 = Sole Survivor
+             * 97 = Solidarity
+             * 98 = Soul Guard
+             * 99 = Spine Chill
+             * 100 = Sprint Burst
+             * 101 = Stake Out
+             * 102 = Streetwise
+             * 103 = Technician
+             * 104 = Tenacity
+             * 105 = This Is Not Happening
+             * 106 = Unbreakable
+             * 107 = Up The Ante
+             * 108 = Urban Evasion
+             * 109 = Vigil
+             * 110 = Visionary
+             * 111 = Wake Up
+             * 112 = We'll Make it
+             * 113 = We're Gonna Live Forever
+             * 114 = Windows of Opportunity
+             * 115 = Wiretap
              * 
              * 
              * 
@@ -623,6 +720,309 @@ namespace DBD_Match_History
                 case 15:
                     image = new(@"/Resources/Survivor_Perks/IconPerks_BoonExponential.png", UriKind.Relative);
                     return image;
+                case 16:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BoonShadowStep.png", UriKind.Relative);
+                    return image;
+                case 17:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Bond.png", UriKind.Relative);
+                    return image;
+                case 18:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BorrowedTime.png", UriKind.Relative);
+                    return image;
+                case 19:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BotanyKnowledge.png", UriKind.Relative);
+                    return image;
+                case 20:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Breakdown.png", UriKind.Relative);
+                    return image;
+                case 21:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Breakout.png", UriKind.Relative);
+                    return image;
+                case 22:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BuckleUp.png", UriKind.Relative);
+                    return image;
+                case 23:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_BuiltToLast.png", UriKind.Relative);
+                    return image;
+                case 24:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_CalmSpirit.png", UriKind.Relative);
+                    return image;
+                case 25:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_CorrectiveAction.png", UriKind.Relative);
+                    return image;
+                case 26:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Counterforce.png", UriKind.Relative);
+                    return image;
+                case 27:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Clairvoyance.png", UriKind.Relative);
+                    return image;
+                case 28:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_DanceWithMe.png", UriKind.Relative);
+                    return image;
+                case 29:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_DarkSense.png", UriKind.Relative);
+                    return image;
+                case 30:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_DeadHard.png", UriKind.Relative);
+                    return image;
+                case 31:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Deception.png", UriKind.Relative);
+                    return image;
+                case 32:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_DecisiveStrike.png", UriKind.Relative);
+                    return image;
+                case 33:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_DejaVu.png", UriKind.Relative);
+                    return image;
+                case 34:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Deliverance.png", UriKind.Relative);
+                    return image;
+                case 35:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_DesperateMeasures.png", UriKind.Relative);
+                    return image;
+                case 36:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_DetectivesHunch.png", UriKind.Relative);
+                    return image;
+                case 37:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Distortion.png", UriKind.Relative);
+                    return image;
+                case 38:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Diversion.png", UriKind.Relative);
+                    return image;
+                case 39:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_EmpathicConnection.png", UriKind.Relative);
+                    return image;
+                case 40:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Empathy.png", UriKind.Relative);
+                    return image;
+                case 41:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_FastTrack.png", UriKind.Relative);
+                    return image;
+                case 42:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Flashbang.png", UriKind.Relative);
+                    return image;
+                case 43:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Flip-Flop.png", UriKind.Relative);
+                    return image;
+                case 44:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Fogwise.png", UriKind.Relative);
+                    return image;
+                case 45:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_ForThePeople.png", UriKind.Relative);
+                    return image;
+                case 46:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Guardian.png", UriKind.Relative);
+                    return image;
+                case 47:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_HeadOn.png", UriKind.Relative);
+                    return image;
+                case 48:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Hope.png", UriKind.Relative);
+                    return image;
+                case 49:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Hyperfocus.png", UriKind.Relative);
+                    return image;
+                case 50:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_InnerFocus.png", UriKind.Relative);
+                    return image;
+                case 51:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_InnerHealing.png", UriKind.Relative);
+                    return image;
+                case 52:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_IronWill.png", UriKind.Relative);
+                    return image;
+                case 53:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Kindred.png", UriKind.Relative);
+                    return image;
+                case 54:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Kinship.png", UriKind.Relative);
+                    return image;
+                case 55:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Leader.png", UriKind.Relative);
+                    return image;
+                case 56:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_LeftBehind.png", UriKind.Relative);
+                    return image;
+                case 57:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Lightweight.png", UriKind.Relative);
+                    return image;
+                case 58:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Lithe.png", UriKind.Relative);
+                    return image;
+                case 59:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_LowProfile.png", UriKind.Relative);
+                    return image;
+                case 60:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_LuckyBreak.png", UriKind.Relative);
+                    return image;
+                case 61:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_MettleOfMan.png", UriKind.Relative);
+                    return image;
+                case 62:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_NoMither.png", UriKind.Relative);
+                    return image;
+                case 63:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_NoOneLeftBehind.png", UriKind.Relative);
+                    return image;
+                case 64:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_ObjectOfObsession.png", UriKind.Relative);
+                    return image;
+                case 65:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_OffTheRecord.png", UriKind.Relative);
+                    return image;
+                case 66:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Open-Handed.png", UriKind.Relative);
+                    return image;
+                case 67:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Overcome.png", UriKind.Relative);
+                    return image;
+                case 68:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Overzealous.png", UriKind.Relative);
+                    return image;
+                case 69:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_ParentalGuidance.png", UriKind.Relative);
+                    return image;
+                case 70:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Pharmacy.png", UriKind.Relative);
+                    return image;
+                case 71:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_PlunderersInstinct.png", UriKind.Relative);
+                    return image;
+                case 72:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Poised.png", UriKind.Relative);
+                    return image;
+                case 73:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_PotentialEnergy.png", UriKind.Relative);
+                    return image;
+                case 74:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_PowerStruggle.png", UriKind.Relative);
+                    return image;
+                case 75:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Premonition.png", UriKind.Relative);
+                    return image;
+                case 76:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_ProveThyself.png", UriKind.Relative);
+                    return image;
+                case 77:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_QuickGambit.png", UriKind.Relative);
+                    return image;
+                case 78:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_QuickAndQuiet.png", UriKind.Relative);
+                    return image;
+                case 79:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_ReactiveHealing.png", UriKind.Relative);
+                    return image;
+                case 80:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Reassurance.png", UriKind.Relative);
+                    return image;
+                case 81:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_RedHerring.png", UriKind.Relative);
+                    return image;
+                case 82:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Renewal.png", UriKind.Relative);
+                    return image;
+                case 83:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_RepressedAlliance.png", UriKind.Relative);
+                    return image;
+                case 84:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_ResidualManifest.png", UriKind.Relative);
+                    return image;
+                case 85:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Resilience.png", UriKind.Relative);
+                    return image;
+                case 86:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Resurgence.png", UriKind.Relative);
+                    return image;
+                case 87:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_RookieSpirit.png", UriKind.Relative);
+                    return image;
+                case 88:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Saboteur.png", UriKind.Relative);
+                    return image;
+                case 89:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SelfAware.png", UriKind.Relative);
+                    return image;
+                case 90:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Self-Care.png", UriKind.Relative);
+                    return image;
+                case 91:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Self-Preservation.png", UriKind.Relative);
+                    return image;
+                case 92:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SituationalAwareness.png", UriKind.Relative);
+                    return image;
+                case 93:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SlipperyMeat.png", UriKind.Relative);
+                    return image;
+                case 94:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SmallGame.png", UriKind.Relative);
+                    return image;
+                case 95:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SmashHit.png", UriKind.Relative);
+                    return image;
+                case 96:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SoleSurvivor.png", UriKind.Relative);
+                    return image;
+                case 97:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Solidarity.png", UriKind.Relative);
+                    return image;
+                case 98:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SoulGuard.png", UriKind.Relative);
+                    return image;
+                case 99:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SpineChill.png", UriKind.Relative);
+                    return image;
+                case 100:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_SprintBurst.png", UriKind.Relative);
+                    return image;
+                case 101:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_StakeOut.png", UriKind.Relative);
+                    return image;
+                case 102:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Streetwise.png", UriKind.Relative);
+                    return image;
+                case 103:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Technician.png", UriKind.Relative);
+                    return image;
+                case 104:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Tenacity.png", UriKind.Relative);
+                    return image;
+                case 105:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_ThisIsNotHappening.png", UriKind.Relative);
+                    return image;
+                case 106:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Unbreakable.png", UriKind.Relative);
+                    return image;
+                case 107:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_UpTheAnte.png", UriKind.Relative);
+                    return image;
+                case 108:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_UrbanEvasion.png", UriKind.Relative);
+                    return image;
+                case 109:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Vigil.png", UriKind.Relative);
+                    return image;
+                case 110:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Visionary.png", UriKind.Relative);
+                    return image;
+                case 111:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_WakeUp.png", UriKind.Relative);
+                    return image;
+                case 112:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_WellMakeIt.png", UriKind.Relative);
+                    return image;
+                case 113:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_WereGonnaLiveForever.png", UriKind.Relative);
+                    return image;
+                case 114:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_WindowsOfOpportunity.png", UriKind.Relative);
+                    return image;
+                case 115:
+                    image = new(@"/Resources/Survivor_Perks/IconPerks_Wiretap.png", UriKind.Relative);
+                    return image;
+
+
+
 
                 default:
                     image = new(@"/Resources/Misc/Transparent_Background.png", UriKind.Relative);
@@ -639,6 +1039,7 @@ namespace DBD_Match_History
             // 1 = Escaped
             // 2 = Sacrificed
             // 3 = Dead
+            // 4 = Killer           IMPLEMENT LATER
 
 
             Uri image;
@@ -655,6 +1056,9 @@ namespace DBD_Match_History
                     return image;
                 case 3:
                     image = new(@"/Resources/Misc/Game_Outcomes/Death_Icon.png", UriKind.Relative);
+                    return image;
+                case 4:
+                    image = new(@"/Resources/Misc/Killer_Icon.png", UriKind.Relative);
                     return image;
 
                 default:

@@ -31,7 +31,7 @@
         <Image Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="40" Width="70" Margin="840,-285,0,0"/>
 
         <TextBlock Name="Score" VerticalAlignment="Center" Text="48 000" Margin="700,-320,115,0" FontSize="20" TextAlignment="Right" Foreground="White"/>
-        <Image Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Sacrificed_Icon.png" Height="50" Width="70" Margin="1100,-320,0,0"/>
+        <Image Name="Outcome" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Sacrificed_Icon.png" Height="50" Width="70" Margin="1100,-320,0,0"/>
 
         <!--Line  VerticalAlignment ="Center" X1="560" Y1="-110" X2="1200" Y2="-110" Stroke="DarkGray" StrokeThickness="4"/-->
     </Grid>
