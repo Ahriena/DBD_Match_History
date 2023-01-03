@@ -21,6 +21,7 @@ namespace DBD_Match_History
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +34,5 @@ namespace DBD_Match_History
             scv.ScrollToVerticalOffset(scv.VerticalOffset - e.Delta);
             e.Handled = true;
         }
-
     }
 }

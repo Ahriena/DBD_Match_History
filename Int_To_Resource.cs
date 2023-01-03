@@ -1020,10 +1020,6 @@ namespace DBD_Match_History
                 case 115:
                     image = new(@"/Resources/Survivor_Perks/IconPerks_Wiretap.png", UriKind.Relative);
                     return image;
-
-
-
-
                 default:
                     image = new(@"/Resources/Misc/Transparent_Background.png", UriKind.Relative);
                     return image;
@@ -1039,7 +1035,7 @@ namespace DBD_Match_History
             // 1 = Escaped
             // 2 = Sacrificed
             // 3 = Dead
-            // 4 = Killer           IMPLEMENT LATER
+            // 4 = Killer          
 
 
             Uri image;
@@ -1546,6 +1542,7 @@ namespace DBD_Match_History
              * 
              * 
              */
+
             switch (input)
             {
                 case 0:
@@ -1627,11 +1624,9 @@ namespace DBD_Match_History
                 case 38:
                     return "The Shattered Square";
 
-
                 default:
                     return "";
             }
         }
-
     }
 }

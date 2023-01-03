@@ -6,42 +6,50 @@ using System.Threading.Tasks;
 
 namespace DBD_Match_History
 {
-    struct Name_And_ID
+    public struct Unit_Information
     {
-        int ID;
-        string Name;
+        int ID { set; get; }
+        string Name { set; get; }
+        string Description { set; get; }
     }
 
-    struct Character
+    public class Character
     {
-        Name_And_ID Character_Name;
-        Name_And_ID Perk1;
-        Name_And_ID Perk2;
-        Name_And_ID Perk3;
-        Name_And_ID Perk4;
-        Name_And_ID Offering;
-        Name_And_ID Item_Or_Power;
-        Name_And_ID Addon1;
-        Name_And_ID Addon2;
-        Name_And_ID Outcome;
-        int Score;
-        bool Player_Character;
+        Unit_Information Character_Name { set; get; }
+        Unit_Information Character_ID { set; get; }
+        Unit_Information Perk1 { set; get; }
+        Unit_Information Perk2 { set; get; }
+        Unit_Information Perk3 { set; get; }
+        Unit_Information Perk4 { set; get; }
+        Unit_Information Offering { set; get; }
+        Unit_Information Addon1 { set; get; }
+        Unit_Information Addon2 { set; get; }
+        int Score { set; get; }
+        bool Player_Character { set; get; }
     };
 
-    class DBD_Game
+    public class Killer : Character
     {
-        Character Survivor1;
-        Character Survivor2;
-        Character Survivor3;
-        Character Survivor4;
-        Character Killer;
+        int kills { set; get; }
+    }
 
-        // MAKE THIS INTO A TIME VARIABLE LATER WHEN WE FIGURE OUT WHAT WE WANT
-        string Game_Duration;
+    public class Survivor : Character
+    {
+        Unit_Information Item { set; get; }
+    }
+
+    public class DBD_Game
+    {
+        public Survivor? Survivor1 { set; get; }
+        public Survivor? Survivor2 { set; get; }
+        public Survivor Survivor3 { set; get; }
+        public Survivor Survivor4 { set; get; }
+        public Killer Killer { set; get; }
+
+        // MAKE THIS INTO A TIME VARIABLE LATER WHEN WE FIGURE OUT WHAT FORMAT WE WANT
+        public string Game_Duration;
         //                              TODO                      
 
-
-        DateTime Date_Played;
-        DateTime Time_Played;
+        public DateTime Time_Played { set; get; }
     }   
 }

@@ -21,14 +21,14 @@
         <Image Name="Perk3" Source="pack://application:,,,/Resources/Misc/Transparent_Background.png" Height="50" Width="100" Margin="300,-295,0,0"/>
         <Image Name="Perk4" Source="pack://application:,,,/Resources/Misc/Transparent_Background.png" Height="50" Width="100" Margin="400,-295,0,0"/>
 
-
         <!--Line  X1="755" Y1="155" X2="755" Y2="105" Stroke="DarkGray" StrokeThickness="2"/-->
-        <Image Source="pack://application:,,,/Resources/Misc/Offering_Background.png" Height="50" Width="70" Margin="520,-295,0,0"/>
+        <Image Name="Offering_Background" Source="pack://application:,,,/Resources/Misc/Offering_Background/Offering_Background_Common.png" Height="50" Width="70" Margin="520,-295,0,0"/>
+        <Image Name="Offering" Source="pack://application:,,,/Resources/Misc/Offering_Background/Offering_Background_Common.png" Height="50" Width="70" Margin="520,-295,0,0"/>
 
         <!--Line  X1="820" Y1="155" X2="820" Y2="105" Stroke="DarkGray" StrokeThickness="2"/-->
-        <Image Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="50" Width="70" Margin="650,-295,0,0"/>
-        <Image Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="40" Width="70" Margin="750,-285,0,0"/>
-        <Image Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="40" Width="70" Margin="840,-285,0,0"/>
+        <Image Name="Item" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="50" Width="70" Margin="650,-295,0,0"/>
+        <Image Name="Addon1" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="40" Width="70" Margin="750,-285,0,0"/>
+        <Image Name="Addon2" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="40" Width="70" Margin="840,-285,0,0"/>
 
         <TextBlock Name="Score" VerticalAlignment="Center" Text="48 000" Margin="700,-320,115,0" FontSize="20" TextAlignment="Right" Foreground="White"/>
         <Image Name="Outcome" Source="pack://application:,,,/Resources/Misc/Game_Outcomes/Sacrificed_Icon.png" Height="50" Width="70" Margin="1100,-320,0,0"/>

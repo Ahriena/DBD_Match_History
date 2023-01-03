@@ -160,6 +160,11 @@
     <None Remove="Resources\Misc\Inverted_Missing_Person.png" />
     <None Remove="Resources\Misc\Missing_Person.png" />
     <None Remove="Resources\Misc\Offering_Background.png" />
+    <None Remove="Resources\Misc\Offering_Background\Offering_Background_Common.png" />
+    <None Remove="Resources\Misc\Offering_Background\Offering_Background_Orange.png" />
+    <None Remove="Resources\Misc\Offering_Background\Offering_Background_Rare.png" />
+    <None Remove="Resources\Misc\Offering_Background\Offering_Background_Ultra_Rare.png" />
+    <None Remove="Resources\Misc\Offering_Background\Offering_Background_Uncommon.png" />
     <None Remove="Resources\Misc\Perk_Background.png" />
     <None Remove="Resources\Misc\Transparent_Background.png" />
     <None Remove="Resources\Survivor_Icons\Ace_Portrait.png" />
@@ -486,6 +491,11 @@
     <Resource Include="Resources\Misc\Game_Outcomes\Sacrificed_Icon.png" />
     <Resource Include="Resources\Misc\Inverted_Missing_Person.png" />
     <Resource Include="Resources\Misc\Missing_Person.png" />
+    <Resource Include="Resources\Misc\Offering_Background\Offering_Background_Common.png" />
+    <Resource Include="Resources\Misc\Offering_Background\Offering_Background_Orange.png" />
+    <Resource Include="Resources\Misc\Offering_Background\Offering_Background_Rare.png" />
+    <Resource Include="Resources\Misc\Offering_Background\Offering_Background_Ultra_Rare.png" />
+    <Resource Include="Resources\Misc\Offering_Background\Offering_Background_Uncommon.png" />
     <Resource Include="Resources\Misc\Perk_Background.png" />
     <Resource Include="Resources\Misc\Transparent_Background.png" />
     <Resource Include="Resources\Misc\Survivor_Icon.png">
