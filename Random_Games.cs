@@ -10,12 +10,12 @@ namespace DBD_Match_History
     // code for modifying the backend
     public partial class MainWindow : Window
     {
-        List<DBD_Game> Recent_Killer_Games = new List<DBD_Game>();
+        List<DBD_Game> All_Killer_Games = new List<DBD_Game>();
 
+        // fills the list with 20 new, completely randomized games for use
         void Randomize_Games()
         {
             Random R = new Random();
-            // fills the list with 20 new, completely randomized games for use
             for (int i = 0; i < 20; i++)
             {
                 DBD_Game game = new DBD_Game();

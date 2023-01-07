@@ -39,6 +39,11 @@ namespace DBD_Match_History
             Perk2.Source = new BitmapImage(data.Int_To_Survivor_Perk(R.Next() % 116));
             Perk3.Source = new BitmapImage(data.Int_To_Survivor_Perk(R.Next() % 116));
             Perk4.Source = new BitmapImage(data.Int_To_Survivor_Perk(R.Next() % 116));
+            Outcome.Source = new BitmapImage(data.Int_To_Survivor_Fate(R.Next() % 4));
+
+
+            Offering.Source = new BitmapImage(data.Int_To_Survivor_Offering(R.Next()%40));
+
         }
 
         public void Killer_Character()
@@ -55,6 +60,8 @@ namespace DBD_Match_History
             Perk4.Source = new BitmapImage(data.Int_To_Killer_Perk(R.Next() % 103));
 
             Outcome.Source = new BitmapImage(data.Int_To_Survivor_Fate(4));
+
+            Offering.Source = new BitmapImage(data.Int_To_Killer_Offering(R.Next() % 37));
 
         }
     }

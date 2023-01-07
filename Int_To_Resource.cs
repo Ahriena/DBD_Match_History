@@ -1063,6 +1063,365 @@ namespace DBD_Match_History
             }
         }
 
+        public Uri Int_To_Survivor_Offering(int input)
+        {
+            /*
+             * 0 = Murky Reagent
+             * 1 = Petrified Oak
+             * 2 = Shiny Coin
+             * 3 = Shroud of Binding
+             * 4 = Vigos Jar of Salty Lips
+             * 5 = White Ward
+             * 6 = Azarovs Key
+             * 7 = Beef Tallow Mixture
+             * 8 = Black Salt Statuette
+             * 9 = Charred Wedding Photograph
+             * 10 = Crow's Eye
+             * 11 = Damaged Photo
+             * 12 = Dusty Noose
+             * 13 = Grandma's Cookbook
+             * 14 = Heart Locket
+             * 15 = Ichorous Loam
+             * 16 = Ivory Chalk Pouch
+             * 17 = Jigsaw Piece
+             * 18 = MacMillan's Phalanx Bone
+             * 19 = Marys Letter
+             * 20 = RPD Badge
+             * 21 = Sacrificial Ward
+             * 22 = Shattered Glasses
+             * 23 = Strode Realty Key
+             * 24 = The Last Mask
+             * 25 = The Pied Piper
+             * 26 = Yamaoka Family Crest
+             * 27 = Cream Chalk Pouch
+             * 28 = Hazy Reagent
+             * 29 = Salt Pouch
+             * 30 = Shroud of Union
+             * 31 = Tarnished Coin
+             * 32 = Vigo's Shroud
+             * 33 = Annotated Blueprint
+             * 34 = Bloodied Blueprint
+             * 35 = Chalk Pouch
+             * 36 = Clear Reagent
+             * 37 = Faint Reagent
+             * 38 = Torn Blueprint
+             * 39 = Vigo's Blueprint
+             * 
+             * */
+            
+            Uri image;
+            switch(input)
+            {
+                case 0:
+                    image = new(@"Resources/Killer_Offerings/MurkyReagent.png", UriKind.Relative);
+                    return image;
+                case 1:
+                    image = new(@"Resources/Survivor_Offerings/PetrifiedOak.png", UriKind.Relative);
+                    return image;
+                case 2:
+                    image = new(@"Resources/Survivor_Offerings/ShinyCoin.png", UriKind.Relative);
+                    return image;
+                case 3:
+                    image = new(@"Resources/Survivor_Offerings/ShroudOfBinding.png", UriKind.Relative);
+                    return image;
+                case 4:
+                    image = new(@"Resources/Survivor_Offerings/VigosJarOfSaltyLips.png", UriKind.Relative);
+                    return image;
+                case 5:
+                    image = new(@"Resources/Survivor_Offerings/WhiteWard.png", UriKind.Relative);
+                    return image;
+                case 6:
+                    image = new(@"Resources/Killer_Offerings/AzarovsKey.png", UriKind.Relative);
+                    return image;
+                case 7:
+                    image = new(@"Resources/Killer_Offerings/BeefTallowMixture.png", UriKind.Relative);
+                    return image;
+                case 8:
+                    image = new(@"Resources/Survivor_Offerings/BlackSaltStatuette.png", UriKind.Relative);
+                    return image;
+                case 9:
+                    image = new(@"Resources/Killer_Offerings/CharredWeddingPhotograph.png", UriKind.Relative);
+                    return image;
+                case 10:
+                    image = new(@"Resources/Killer_Offerings/AzarovsKey.png", UriKind.Relative);
+                    return image;
+                case 11:
+                    image = new(@"Resources/Killer_Offerings/BeefTallowMixture.png", UriKind.Relative);
+                    return image;
+                case 12:
+                    image = new(@"Resources/Killer_Offerings/DustyNoose.png", UriKind.Relative);
+                    return image;
+                case 13:
+                    image = new(@"Resources/Killer_Offerings/GrandmasCookbook.png", UriKind.Relative);
+                    return image;
+                case 14:
+                    image = new(@"Resources/Killer_Offerings/HeartLocket.png", UriKind.Relative);
+                    return image;
+                case 15:
+                    image = new(@"Resources/Killer_Offerings/IchorousLoam.png", UriKind.Relative);
+                    return image;
+                case 16:
+                    image = new(@"Resources/Survivor_Offerings/IvoryChalkPouch.png", UriKind.Relative);
+                    return image;
+                case 17:
+                    image = new(@"Resources/Killer_Offerings/JigsawPiece.png", UriKind.Relative);
+                    return image;
+                case 18:
+                    image = new(@"Resources/Killer_Offerings/MacMillansPhalanxBone.png", UriKind.Relative);
+                    return image;
+                case 19:
+                    image = new(@"Resources/Killer_Offerings/MarysLetter.png", UriKind.Relative);
+                    return image;
+                case 20:
+                    image = new(@"Resources/Killer_Offerings/RpdBadge.png", UriKind.Relative);
+                    return image;
+                case 21:
+                    image = new(@"Resources/Killer_Offerings/SacrificialWard.png", UriKind.Relative);
+                    return image;
+                case 22:
+                    image = new(@"Resources/Killer_Offerings/ShatteredGlasses.png", UriKind.Relative);
+                    return image;
+                case 23:
+                    image = new(@"Resources/Killer_Offerings/StrodeRealtyKey.png", UriKind.Relative);
+                    return image;
+                case 24:
+                    image = new(@"Resources/Killer_Offerings/TheLastMask.png", UriKind.Relative);
+                    return image;
+                case 25:
+                    image = new(@"Resources/Killer_Offerings/ThePiedPiper.png", UriKind.Relative);
+                    return image;
+                case 26:
+                    image = new(@"Resources/Killer_Offerings/YamaokaFamilyCrest.png", UriKind.Relative);
+                    return image;
+                case 27:
+                    image = new(@"Resources/Survivor_Offerings/CreamChalkPouch.png", UriKind.Relative);
+                    return image;
+                case 28:
+                    image = new(@"Resources/Killer_Offerings/HazyReagent.png", UriKind.Relative);
+                    return image;
+                case 29:
+                    image = new(@"Resources/Survivor_Offerings/SaltPouch.png", UriKind.Relative);
+                    return image;
+                case 30:
+                    image = new(@"Resources/Survivor_Offerings/ShroudOfUnion.png", UriKind.Relative);
+                    return image;
+                case 31:
+                    image = new(@"Resources/Survivor_Offerings/TarnishedCoin.png", UriKind.Relative);
+                    return image;
+                case 32:
+                    image = new(@"Resources/Survivor_Offerings/VigosShroud.png", UriKind.Relative);
+                    return image;
+                case 33:
+                    image = new(@"Resources/Killer_Offerings/AnnotatedBlueprint.png", UriKind.Relative);
+                    return image;
+                case 34:
+                    image = new(@"Resources/Killer_Offerings/BloodiedBlueprint.png", UriKind.Relative);
+                    return image;
+                case 35:
+                    image = new(@"Resources/Survivor_Offerings/ChalkPouch.png", UriKind.Relative);
+                    return image;
+                case 36:
+                    image = new(@"Resources/Killer_Offerings/ClearReagent.png", UriKind.Relative);
+                    return image;
+                case 37:
+                    image = new(@"Resources/Killer_Offerings/FaintReagent.png", UriKind.Relative);
+                    return image;
+                case 38:
+                    image = new(@"Resources/Killer_Offerings/TornBlueprint.png", UriKind.Relative);
+                    return image;
+                case 39:
+                    image = new(@"Resources/Killer_Offerings/VigosBlueprint.png", UriKind.Relative);
+                    return image;
+                /*
+
+
+  
+             * 36 = Clear Reagent
+             * 37 = Faint Reagent
+             * 38 = Torn Blueprint
+             * 39 = Vigo's Blueprint
+             * 
+             * */
+
+                default:
+                    image = new(@"Resources/Misc/Offering_Background/Offering_Background_Common.png", UriKind.Relative);
+                    return image;
+            }
+        }
+
+
+
+        // returns killer offering portrait
+        public Uri Int_To_Killer_Offering(int input)
+        {
+            /* 
+             * 0 = Ebony Memento Mori
+             * 1 = Black Ward
+             * 2 = CutCoin
+             * 3 = Murky Reagent
+             * 4 = PutridOak
+             * 5 = Azarov's Key
+             * 6 = Beef Tallow Mixture 
+             * 7 = Charred Wedding Photograph
+             * 8 = Crow's Eye
+             * 9 = Damaged Photo
+             * 10 = Dusty Noose
+             * 11 = Grandma's Cookbook
+             * 12 = Heart Locket
+             * 13 = Ichorous Loam
+             * 14 = Ivory Memento Mori
+             * 15 = Jigsaw Piece
+             * 16 = MacMillansPhalanxBone
+             * 17 = MarysLetter
+             * 18 = Rotten Oak
+             * 19 = RPD Badge
+             * 20 = Sacrificial Ward
+             * 21 = Shattered Glasses
+             * 22 = Strode Realty Key
+             * 23 = The Last Mask
+             * 24 = The Pied Piper
+             * 25 = Yamaoka Family Crest
+             * 26 = Cypress Memento Mori
+             * 27 = Hazy Reagent
+             * 28 = Moldy Oak
+             * 29 = Scratched Coin
+             * 30 = Shroud of Separation
+             * 31 = Annotated Blueprint
+             * 32 = Bloodied Blueprint
+             * 33 = Clear Reagent
+             * 34 = Faint Reagent
+             * 35 = Torn Blueprint
+             * 36 = Vigo's Blueprint
+             * 
+             * 
+             * 
+             * 
+            */         
+
+
+            Uri image;
+            switch (input)
+            {
+                case 0:
+                    image = new(@"/Resources/Killer_Offerings/EbonyMementoMori.png", UriKind.Relative);
+                    return image;
+                case 1:
+                    image = new(@"/Resources/Killer_Offerings/BlackWard.png", UriKind.Relative);
+                    return image;
+                case 2:
+                    image = new(@"/Resources/Killer_Offerings/CutCoin.png", UriKind.Relative);
+                    return image;
+                case 3:
+                    image = new(@"/Resources/Killer_Offerings/MurkyReagent.png", UriKind.Relative);
+                    return image;
+                case 4:
+                    image = new(@"/Resources/Killer_Offerings/PutridOak.png", UriKind.Relative);
+                    return image;
+                case 5:
+                    image = new(@"/Resources/Killer_Offerings/AzarovsKey.png", UriKind.Relative);
+                    return image;
+                case 6:
+                    image = new(@"/Resources/Killer_Offerings/BeefTallowMixture.png", UriKind.Relative);
+                    return image;
+                case 7:
+                    image = new(@"/Resources/Killer_Offerings/CharredWeddingPhotograph.png", UriKind.Relative);
+                    return image;
+                case 8:
+                    image = new(@"/Resources/Killer_Offerings/CrowsEye.png", UriKind.Relative);
+                    return image;
+                case 9:
+                    image = new(@"/Resources/Killer_Offerings/DamagedPhoto.png", UriKind.Relative);
+                    return image;
+                case 10:
+                    image = new(@"/Resources/Killer_Offerings/DustyNoose.png", UriKind.Relative);
+                    return image;
+                case 11:
+                    image = new(@"/Resources/Killer_Offerings/GrandmasCookbook.png", UriKind.Relative);
+                    return image;
+                case 12:
+                    image = new(@"/Resources/Killer_Offerings/HeartLocket.png", UriKind.Relative);
+                    return image;
+                case 13:
+                    image = new(@"/Resources/Killer_Offerings/IchorousLoam.png", UriKind.Relative);
+                    return image;
+                case 14:
+                    image = new(@"/Resources/Killer_Offerings/IvoryMementoMori.png", UriKind.Relative);
+                    return image;
+                case 15:
+                    image = new(@"/Resources/Killer_Offerings/JigsawPiece.png", UriKind.Relative);
+                    return image;
+                case 16:
+                    image = new(@"/Resources/Killer_Offerings/MacMillansPhalanxBone.png", UriKind.Relative);
+                    return image;
+                case 17:
+                    image = new(@"/Resources/Killer_Offerings/MarysLetter.png", UriKind.Relative);
+                    return image;
+                case 18:
+                    image = new(@"/Resources/Killer_Offerings/RottenOak.png", UriKind.Relative);
+                    return image;
+                case 19:
+                    image = new(@"/Resources/Killer_Offerings/RpdBadge.png", UriKind.Relative);
+                    return image;
+                case 20:
+                    image = new(@"/Resources/Killer_Offerings/SacrificialWard.png", UriKind.Relative);
+                    return image;
+                case 21:
+                    image = new(@"/Resources/Killer_Offerings/ShatteredGlasses.png", UriKind.Relative);
+                    return image;
+                case 22:
+                    image = new(@"/Resources/Killer_Offerings/StrodeRealtyKey.png", UriKind.Relative);
+                    return image;
+                case 23:
+                    image = new(@"/Resources/Killer_Offerings/TheLastMask.png", UriKind.Relative);
+                    return image;
+                case 24:
+                    image = new(@"/Resources/Killer_Offerings/ThePiedPiper.png", UriKind.Relative);
+                    return image;
+                case 25:
+                    image = new(@"/Resources/Killer_Offerings/YamaokaFamilyCrest.png", UriKind.Relative);
+                    return image;
+                case 26:
+                    image = new(@"/Resources/Killer_Offerings/CypressMementoMori.png", UriKind.Relative);
+                    return image;
+                case 27:
+                    image = new(@"/Resources/Killer_Offerings/HazyReagent.png", UriKind.Relative);
+                    return image;
+                case 28:
+                    image = new(@"/Resources/Killer_Offerings/MoldyOak.png", UriKind.Relative);
+                    return image;
+                case 29:
+                    image = new(@"/Resources/Killer_Offerings/ScratchedCoin.png", UriKind.Relative);
+                    return image;
+                case 30:
+                    image = new(@"/Resources/Killer_Offerings/ShroudOfSeparation.png", UriKind.Relative);
+                    return image;
+                case 31:
+                    image = new(@"/Resources/Killer_Offerings/AnnotatedBlueprint.png", UriKind.Relative);
+                    return image;
+                case 32:
+                    image = new(@"/Resources/Killer_Offerings/BloodiedBlueprint.png", UriKind.Relative);
+                    return image;
+                case 33:
+                    image = new(@"/Resources/Killer_Offerings/ClearReagent.png", UriKind.Relative);
+                    return image;
+                case 34:
+                    image = new(@"/Resources/Killer_Offerings/FaintReagent.png", UriKind.Relative);
+                    return image;
+                case 35:
+                    image = new(@"/Resources/Killer_Offerings/TornBlueprint.png", UriKind.Relative);
+                    return image;
+                case 36:
+                    image = new(@"/Resources/Killer_Offerings/VigosBlueprint.png", UriKind.Relative);
+                    return image;
+
+
+                default:
+                    image = new(@"Resources/Misc/Offering_Background/Offering_Background_Common.png", UriKind.Relative);
+                    return image;
+            }
+        }
+
+
         // converts an int into the associated killer portrait
         public Uri Int_To_Killer_Perk(int input)
         {
