@@ -35,7 +35,10 @@ namespace DBD_Match_History
             Survivor3.Source = new BitmapImage(data.Int_To_Survivor_Fate(R.Next() % 4));
             Survivor4.Source = new BitmapImage(data.Int_To_Survivor_Fate(R.Next() % 4));
 
-            DateTime Today= DateTime.Now;
+
+
+
+            DateTime Today = DateTime.Now;
             DatePlayed.Text = Today.ToString("M/d/yyyy");
             MapPlayed.Text = data.Int_To_Map_Name(R.Next() % 39);
 

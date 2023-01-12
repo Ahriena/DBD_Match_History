@@ -147,6 +147,144 @@ namespace DBD_Match_History
             }
         }
 
+        public Uri Int_To_Killer_Power(int input)
+        {
+            /* 
+             *  0 = Trapper
+             *  1 = Wraith
+             *  2 = Hillbilly
+             *  3 = Nurse
+             *  4 = Huntress
+             *  5 = Myers
+             *  6 = Hag
+             *  7 = Doctor
+             *  8 = Bubba
+             *  9 = Freddy
+             * 10 = Pig
+             * 11 = Clown
+             * 12 = Spirit
+             * 13 = Legion
+             * 14 = Plague
+             * 15 = Ghostface
+             * 16 = Demogorgon
+             * 17 = Oni
+             * 18 = Deathslinger
+             * 19 = Pyramid Head
+             * 20 = Blight
+             * 21 = Twins
+             * 22 = Trickster
+             * 23 = Nemesis
+             * 24 = Pinhead
+             * 25 = Artist
+             * 26 = Onryo
+             * 27 = Dredge
+             * 28 = Wesker
+             * 29 = Knight
+             */
+
+            Uri image;
+            switch (input)
+            {
+                case 0:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_Trap.png", UriKind.Relative);
+                    return image;
+                case 1:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_Bell.png", UriKind.Relative);
+                    return image;
+                case 2:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_Chainsaw.png", UriKind.Relative);
+                    return image;
+                case 3:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_Breath.png", UriKind.Relative);
+                    return image;
+                case 4:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_HuntingHatchets.png", UriKind.Relative);
+                    return image;
+                case 5:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_Stalker.png", UriKind.Relative);
+                    return image;
+                case 6:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_BlackenedCatalyst.png", UriKind.Relative);
+                    return image;
+                case 7:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_CartersSpark.png", UriKind.Relative);
+                    return image;
+                case 8:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_BubbasChainsaw.png", UriKind.Relative);
+                    return image;
+                case 9:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_DreamDemon.png", UriKind.Relative);
+                    return image;
+                case 10:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_JigsawsBaptism.png", UriKind.Relative);
+                    return image;
+                case 11:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_GasBomb.png", UriKind.Relative);
+                    return image;
+                case 12:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_YamaokasHaunting.png", UriKind.Relative);
+                    return image;
+                case 13:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_FeralFrenzy.png", UriKind.Relative);
+                    return image;
+                case 14:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_VilePurge.png", UriKind.Relative);
+                    return image;
+                case 15:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_NightShroud.png", UriKind.Relative);
+                    return image;
+                case 16:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_OfTheAbyss.png", UriKind.Relative);
+                    return image;
+                case 17:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_YamaokasWrath.png", UriKind.Relative);
+                    return image;
+                case 18:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_TheRedeemer.png", UriKind.Relative);
+                    return image;
+                case 19:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_RitesOfJudgement.png", UriKind.Relative);
+                    return image;
+                case 20:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_BlightedCorruption.png", UriKind.Relative);
+                    return image;
+                case 21:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_BloodBond.png", UriKind.Relative);
+                    return image;
+                case 22:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_Showstopper.png", UriKind.Relative);
+                    return image;
+                case 23:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_T-Virus.png", UriKind.Relative);
+                    return image;
+                case 24:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_SummonsOfPain.png", UriKind.Relative);
+                    return image;
+                case 25:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_BirdsOfTorment.png", UriKind.Relative);
+                    return image;
+                case 26:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_DelugeOfFear.png", UriKind.Relative);
+                    return image;
+                case 27:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_ReignOfDarkness.png", UriKind.Relative);
+                    return image;
+                case 28:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_VirulentBound.png", UriKind.Relative);
+                    return image;
+
+
+                    // THIS ONE IS DIFFERENT BECAUSE I COULDN'T FIND THE ICON WITH A TRANSPARENT BACKGROUND
+                    // YES I AM ANGRY ABOUT IT
+                case 29:
+                    image = new(@"/Resources/Killer_Powers/IconPowers_Guardia.png", UriKind.Relative);
+                    return image;
+                default:
+                    image = new(@"/Resources/Misc/Transparent_Background.png", UriKind.Relative);
+                    return image;
+            }
+        }
+
         // converts an int into the associated killer portrait
         public string Int_To_Killer_Name(int input)
         {
@@ -1985,6 +2123,152 @@ namespace DBD_Match_History
 
                 default:
                     return "";
+            }
+        }
+
+        public Uri Int_To_Survivor_Item(int input)
+        {
+
+            /*
+             * 0 = Rainbow Map
+             * 1 = Skeleton Key
+             * 2 = Alexs Toolbox
+             * 3 = Dull Key
+             * 4 = Engineers Toolbox
+             * 5 = Ranger Medkit
+             * 6 = Utility Flashlight
+             * 7 = Broken Key
+             * 8 = Commodious Toolbox
+             * 9 = Emergency Medkit
+             * 10 = Map
+             * 11 = Mechanics Toolbox
+             * 12 = Sport Flashlight
+             * 13 = First Aid Kit
+             * 14 = Flashlight
+             * 15 = Toolbox
+             * 16 = Camping Aid Kit
+             * 17 = Worn-Out Tools
+             * 18 = All Hallow's Eve Lunchbox
+             * 19 = Anniversary Flashlight
+             * 20 = Anniversary Med-Kit
+             * 21 = Anniversary Toolbox
+             * 22 = Chinese Firecracker
+             * 23 = Festive Toolbox
+             * 24 = Masquerade Flashlight
+             * 25 = Masquerade Med-kit
+             * 26 = Masquerade Toolbox
+             * 27 = Third Year Party Streamer
+             * 28 = Will O Wisp
+             * 29 = Winter Party Streamer
+             * 
+             * 
+             * 
+             * 
+             * 
+             * 
+             * 
+             * 
+             * */
+
+            Uri image;
+
+            switch (input)
+            {
+                case 0:
+                    image = new(@"/Resources/Survivor_Items/RainbowMap.png", UriKind.Relative);
+                    return image;
+                case 1:
+                    image = new(@"/Resources/Survivor_Items/SkeletonKey.png", UriKind.Relative);
+                    return image;
+                case 2:
+                    image = new(@"/Resources/Survivor_Items/AlexsToolbox.png", UriKind.Relative);
+                    return image;
+                case 3:
+                    image = new(@"/Resources/Survivor_Items/DullKey.png", UriKind.Relative);
+                    return image;
+                case 4:
+                    image = new(@"/Resources/Survivor_Items/EngineersToolbox.png", UriKind.Relative);
+                    return image;
+                case 5:
+                    image = new(@"/Resources/Survivor_Items/RangerMedkit.png", UriKind.Relative);
+                    return image;
+                case 6:
+                    image = new(@"/Resources/Survivor_Items/UtilityFlashlight.png", UriKind.Relative);
+                    return image;
+                case 7:
+                    image = new(@"/Resources/Survivor_Items/BrokenKey.png", UriKind.Relative);
+                    return image;
+                case 8:
+                    image = new(@"/Resources/Survivor_Items/CommodiousToolbox.png", UriKind.Relative);
+                    return image;
+                case 9:
+                    image = new(@"/Resources/Survivor_Items/EmergencyMedkit.png", UriKind.Relative);
+                    return image;
+                case 10:
+                    image = new(@"/Resources/Survivor_Items/Map.png", UriKind.Relative);
+                    return image;
+                case 11:
+                    image = new(@"/Resources/Survivor_Items/MechanicsToolbox.png", UriKind.Relative);
+                    return image;
+                case 12:
+                    image = new(@"/Resources/Survivor_Items/SportFlashlight.png", UriKind.Relative);
+                    return image;
+                case 13:
+                    image = new(@"/Resources/Survivor_Items/FirstAidKit.png", UriKind.Relative);
+                    return image;
+                case 14:
+                    image = new(@"/Resources/Survivor_Items/Flashlight.png", UriKind.Relative);
+                    return image;
+                case 15:
+                    image = new(@"/Resources/Survivor_Items/Toolbox.png", UriKind.Relative);
+                    return image;
+                case 16:
+                    image = new(@"/Resources/Survivor_Items/CampingAidKit.png", UriKind.Relative);
+                    return image;
+                case 17:
+                    image = new(@"/Resources/Survivor_Items/WornOutTools.png", UriKind.Relative);
+                    return image;
+                case 18:
+                    image = new(@"/Resources/Survivor_Items/AllHallowsEveLunchbox.png", UriKind.Relative);
+                    return image;
+                case 19:
+                    image = new(@"/Resources/Survivor_Items/AnniversaryFlashlight.png", UriKind.Relative);
+                    return image;
+                case 20:
+                    image = new(@"/Resources/Survivor_Items/AnniversaryMedKit.png", UriKind.Relative);
+                    return image;
+                case 21:
+                    image = new(@"/Resources/Survivor_Items/AnniversaryToolbox.png", UriKind.Relative);
+                    return image;
+                case 22:
+                    image = new(@"/Resources/Survivor_Items/ChineseFirecracker.png", UriKind.Relative);
+                    return image;
+                case 23:
+                    image = new(@"/Resources/Survivor_Items/FestiveToolbox.png", UriKind.Relative);
+                    return image;
+                case 24:
+                    image = new(@"/Resources/Survivor_Items/MasqueradeFlashlight.png", UriKind.Relative);
+                    return image;
+                case 25:
+                    image = new(@"/Resources/Survivor_Items/MasqueradeMedKit.png", UriKind.Relative);
+                    return image;
+                case 26:
+                    image = new(@"/Resources/Survivor_Items/MasqueradeToolbox.png", UriKind.Relative);
+                    return image;
+                case 27:
+                    image = new(@"/Resources/Survivor_Items/ThirdYearPartyStreamer.png", UriKind.Relative);
+                    return image;
+                case 28:
+                    image = new(@"/Resources/Survivor_Items/WillOWisp.png", UriKind.Relative);
+                    return image;
+                case 29:
+                    image = new(@"/Resources/Survivor_Items/WinterPartyStreamer.png", UriKind.Relative);
+                    return image;
+
+
+                default:
+                    image = new(@"/Resources/Misc/Transparent_Background.png", UriKind.Relative);
+                    return image;
             }
         }
     }

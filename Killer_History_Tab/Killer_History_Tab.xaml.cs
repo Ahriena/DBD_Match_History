@@ -11,6 +11,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -24,6 +25,7 @@ namespace DBD_Match_History
     public partial class Killer_History_Tab : UserControl
     {
         Random R = new Random();
+        Data data = new Data();
 
         public Killer_History_Tab()
         {
@@ -40,6 +42,13 @@ namespace DBD_Match_History
             Player3.Survivor_Character();
             Player4.Survivor_Character();
             Player5.Killer_Character();
+
+            Player1.Item.Source = new BitmapImage(data.Int_To_Survivor_Item(R.Next() % 30));
+            Player2.Item.Source = new BitmapImage(data.Int_To_Survivor_Item(R.Next() % 30));
+            Player3.Item.Source = new BitmapImage(data.Int_To_Survivor_Item(R.Next() % 30));
+            Player4.Item.Source = new BitmapImage(data.Int_To_Survivor_Item(R.Next() % 30));
+            Player5.Item.Source = new BitmapImage(data.Int_To_Killer_Power(R.Next() % 31));
+
         }
 
         // scroll wheel functionality for the scrollviewer object

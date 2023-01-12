@@ -26,6 +26,7 @@
         <Image Name="Offering" Source="pack://application:,,,/Resources/Misc/Offering_Background/Offering_Background_Common.png" Height="50" Width="70" Margin="520,-295,0,0"/>
 
         <!--Line  X1="820" Y1="155" X2="820" Y2="105" Stroke="DarkGray" StrokeThickness="2"/-->
+        <Image Name="Item_Background" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="50" Width="70" Margin="650,-295,0,0"/>
         <Image Name="Item" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="50" Width="70" Margin="650,-295,0,0"/>
         <Image Name="Addon1" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="40" Width="70" Margin="750,-285,0,0"/>
         <Image Name="Addon2" Source="pack://application:,,,/Resources/Misc/Addon_Backgrounds/Background_Common.png" Height="40" Width="70" Margin="840,-285,0,0"/>
