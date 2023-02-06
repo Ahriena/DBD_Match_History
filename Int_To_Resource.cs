@@ -2160,14 +2160,6 @@ namespace DBD_Match_History
              * 27 = Third Year Party Streamer
              * 28 = Will O Wisp
              * 29 = Winter Party Streamer
-             * 
-             * 
-             * 
-             * 
-             * 
-             * 
-             * 
-             * 
              * */
 
             Uri image;
@@ -2271,5 +2263,184 @@ namespace DBD_Match_History
                     return image;
             }
         }
+
+
+        public Uri Int_To_Survivor_Addon(int item, int input)
+        {
+
+
+            Uri image;
+
+            switch (item)
+            {
+                // Maps
+                case 0:
+                case 10:
+
+                    /*
+                     * 0 = Crystal Bead
+                     * 1 = Black Silk Cord
+                     * 2 = Odd Stamp
+                     * 3 = Glass Bead
+                     * 4 = Red Twine
+                     * 5 = Retardant Jelly
+                     * 6 = Unusual Stamp
+                     * 7 = Yellow Wire
+                     * 8 = Map Appendum
+                     * 
+                     * 
+                     * */
+
+
+
+                    switch(input)
+                    {
+                        // Crystal Bead
+                        case 0:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/CrystalBead.png", UriKind.Relative);
+                            return image;
+                       
+                        // Black Silk Cord
+                        case 1:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/BlackSilkCord.png", UriKind.Relative);
+                            return image;
+                        
+                        // Odd Stmp
+                        case 2:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/OddStamp.png", UriKind.Relative);
+                            return image;
+
+                        // Glass Bead
+                        case 3:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/GlassBead.png", UriKind.Relative);
+                            return image;
+                        
+                        // Red Twine
+                        case 4:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/RedTwine.png", UriKind.Relative);
+                            return image;
+                        
+                        // Retardant Jelly
+                        case 5:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/RetardantJelly.png", UriKind.Relative);
+                            return image;
+                        
+                        // Unusual Stamp
+                        case 6:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/UnusualStamp.png", UriKind.Relative);
+                            return image;
+                        
+                        // Yellow Wire
+                        case 7:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/YellowWire.png", UriKind.Relative);
+                            return image;
+                        
+                        // Map Appendum
+                        case 8:
+                            image = new(@"/Resources/Survivor_Items/Addons/Maps/MapAddendum.png", UriKind.Relative);
+                            return image;
+
+                        default:
+                            image = new(@"/Resources/Misc/Addon_Backgrounds/Background_Common.png", UriKind.Relative);
+                            return image;
+                    }
+
+                // toolboxes
+                case 2:
+                case 8:
+                case 11:
+                case 15:
+                case 17:
+                case 21:
+                case 23:
+                case 26:
+                    switch(input)
+                    {
+                        /*
+                         * 0 = Brand New Part
+                         * 1 = Grip Wrench
+                         * 2 = Hacksaw
+                         * 3 = Cutting Wire
+                         * 4 = Protective Gloves
+                         * 5 = Socket Swivels
+                         * 6 = Spring Clamp
+                         * 7 = Wire Spool
+                         * 8 = Clean Rag
+                         * 9 = Instructions
+                         * 10 = Scraps
+                         * 
+                         * 
+                         * */
+
+                        // brand new part
+                        case 0:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/BrandNewPart.png", UriKind.Relative);
+                            return image;
+                        
+                        // Grip Wrench
+                        case 1:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/GripWrench.png", UriKind.Relative);
+                            return image;
+                        
+                        // hacksaw
+                        case 2:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/Hacksaw.png", UriKind.Relative);
+                            return image;
+                        
+                        // cutting wire
+                        case 3:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/CuttingWire.png", UriKind.Relative);
+                            return image;
+                        
+                        // protective gloves
+                        case 4:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/ProtectiveGloves.png", UriKind.Relative);
+                            return image;
+
+                        // socket swivels
+                        case 5:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/SocketSwivels.png", UriKind.Relative);
+                            return image; 
+                            
+                        // spring clamp
+                        case 6:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/SpringClamp.png", UriKind.Relative);
+                            return image; 
+                            
+                        // Wire Spool
+                        case 7:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/WireSpool.png", UriKind.Relative);
+                            return image; 
+                            
+                        // Clean Rag
+                        case 8:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/CleanRag.png", UriKind.Relative);
+                            return image;
+
+                        // Instructions
+                        case 9:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/Instructions.png", UriKind.Relative);
+                            return image;
+                       
+                        // Scraps
+                        case 10:
+                            image = new(@"/Resources/Survivor_Items/Addons/Toolbox/Scraps.png", UriKind.Relative);
+                            return image;
+
+                        default:
+                            image = new(@"/Resources/Misc/Addon_Backgrounds/Background_Common.png", UriKind.Relative);
+                            return image;
+                    }
+
+
+
+
+
+                default:
+                    image = new(@"/Resources/Misc/Addon_Backgrounds/Background_Common.png", UriKind.Relative);
+                    return image;
+            }
+        }
+
     }
 }

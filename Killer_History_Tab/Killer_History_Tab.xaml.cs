@@ -49,6 +49,22 @@ namespace DBD_Match_History
             Player4.Item.Source = new BitmapImage(data.Int_To_Survivor_Item(R.Next() % 30));
             Player5.Item.Source = new BitmapImage(data.Int_To_Killer_Power(R.Next() % 31));
 
+            Player1.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 0));
+            Player1.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 1)); 
+            
+            Player2.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 2)); 
+            Player2.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 3)); 
+            
+            Player3.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 4));
+            Player3.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 5));
+            
+            Player4.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 6)); 
+            Player4.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 7)); 
+            
+            Player5.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 8)); 
+            Player5.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(2, 10));
+
+
         }
 
         // scroll wheel functionality for the scrollviewer object
