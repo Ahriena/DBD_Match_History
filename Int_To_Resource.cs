@@ -2277,24 +2277,23 @@ namespace DBD_Match_History
                 case 0:
                 case 10:
 
-                    /*
-                     * 0 = Crystal Bead
-                     * 1 = Black Silk Cord
-                     * 2 = Odd Stamp
-                     * 3 = Glass Bead
-                     * 4 = Red Twine
-                     * 5 = Retardant Jelly
-                     * 6 = Unusual Stamp
-                     * 7 = Yellow Wire
-                     * 8 = Map Appendum
-                     * 
-                     * 
-                     * */
-
-
-
                     switch(input)
                     {
+                        /*
+                         * 0 = Crystal Bead
+                         * 1 = Black Silk Cord
+                         * 2 = Odd Stamp
+                         * 3 = Glass Bead
+                         * 4 = Red Twine
+                         * 5 = Retardant Jelly
+                         * 6 = Unusual Stamp
+                         * 7 = Yellow Wire
+                         * 8 = Map Appendum
+                         * 
+                         * 
+                         * */
+
+
                         // Crystal Bead
                         case 0:
                             image = new(@"/Resources/Survivor_Items/Addons/Maps/CrystalBead.png", UriKind.Relative);
@@ -2345,8 +2344,80 @@ namespace DBD_Match_History
                             return image;
                     }
 
+                //keys
+                case 1:
+                case 3:
+                case 7:
+                    
+                    /*
+                     * 0 = blood amber
+                     * 1 = milky glass
+                     * 2 = unique wedding ring
+                     * 3 = weaved ring
+                     * 4 = gold token
+                     * 5 = eroded token
+                     * 6 = prayer beads
+                     * 7 = scratched pearl
+                     * 8 = prayer rope
+                     * 
+                     * */
+
+                    switch(input)
+                    {
+                        //blood amber
+                        case 0:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/BloodAmber.png", UriKind.Relative);
+                            return image;
+
+                        // milky glass
+                        case 1:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/MilkyGlass.png", UriKind.Relative);
+                            return image;
+
+                        //unique wedding ring
+                        case 2:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/UniqueWeddingRing.png", UriKind.Relative);
+                            return image;
+                       
+                        //weaved ring
+                        case 3:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/WeavedRing.png", UriKind.Relative);
+                            return image;
+                       
+                        // gold token
+                        case 4:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/GoldToken.png", UriKind.Relative);
+                            return image;
+                       
+                        // eroded token
+                        case 5:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/ErodedToken.png", UriKind.Relative);
+                            return image;
+                       
+                        //prayer beads
+                        case 6:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/PrayerBeads.png", UriKind.Relative);
+                            return image;
+
+                        //scratched pearl
+                        case 7:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/ScratchedPearl.png", UriKind.Relative);
+                            return image;
+
+                        // prayer rope
+                        case 8:
+                            image = new(@"/Resources/Survivor_Items/Addons/Keys/PrayerRope.png", UriKind.Relative);
+                            return image;
+
+
+                        default:
+                            image = new(@"/Resources/Misc/Addon_Backgrounds/Background_Common.png", UriKind.Relative);
+                            return image;
+                    }
+
                 // toolboxes
                 case 2:
+                case 4:
                 case 8:
                 case 11:
                 case 15:
@@ -2432,8 +2503,213 @@ namespace DBD_Match_History
                             return image;
                     }
 
+                // medkits
+                case 5:
+                case 9:
+                case 13:
+                case 16:
+                case 18:
+                case 20:
+                case 25:
+
+                    switch(input)
+                    {
+                        /*
+                         * 0 = anti-haemorrhagic syringe
+                         * 1 = styptic agent
+                         * 2 = abdominal dressing
+                         * 3 = gel dressing
+                         * 4 = surgical suture
+                         * 5 = gauze roll
+                         * 6 = medical scissors
+                         * 7 = needle & thread
+                         * 8 = self adherent wrap
+                         * 9 = sponge
+                         * 10 = bandages
+                         * 11 = butterfly tape
+                         * 12 = rubber gloves
+                         * 13 = refined serum
+                         * 
+                         * 
+                         * */
+
+                        // anti-haemorrhagic syringe
+                        case 0:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/Anti-haemorrhagicSyringe.png", UriKind.Relative);
+                            return image;
+
+                        // styptic agent
+                        case 1:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/StypticAgent.png", UriKind.Relative);
+                            return image;
+
+                        //abdominal dressing
+                        case 2:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/AbdominalDressing.png", UriKind.Relative);
+                            return image;
+
+                        //Gel dressing
+                        case 3:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/GelDressings.png", UriKind.Relative);
+                            return image;
+
+                        //surgical suture
+                        case 4:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/SurgicalSuture.png", UriKind.Relative);
+                            return image;
+
+                        // gauze roll
+                        case 5:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/GauzeRoll.png", UriKind.Relative);
+                            return image;
+
+                        // medical scissors
+                        case 6:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/MedicalScissors.png", UriKind.Relative);
+                            return image;
+
+                        // needle and thread
+                        case 7:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/NeedleAndThread.png", UriKind.Relative);
+                            return image;
+
+                        //self adherent wrap
+                        case 8:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/SelfAdherentWrap.png", UriKind.Relative);
+                            return image;
+
+                        // sponge
+                        case 9:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/Sponge.png", UriKind.Relative);
+                            return image;
+
+                        // bandages
+                        case 10:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/Bandages.png", UriKind.Relative);
+                            return image;
+
+                        //Butterfly tape
+                        case 11:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/ButterflyTape.png", UriKind.Relative);
+                            return image;
+
+                        // rubber gloves
+                        case 12:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/RubberGloves.png", UriKind.Relative);
+                            return image;
+
+                        // refined serum
+                        case 13:
+                            image = new(@"/Resources/Survivor_Items/Addons/Medkit/RefinedSerum.png", UriKind.Relative);
+                            return image;
 
 
+                        default:
+                            image = new(@"/Resources/Misc/Addon_Backgrounds/Background_Common.png", UriKind.Relative);
+                            return image;
+
+                    }
+
+                // flashlights
+                case 6:
+                case 12:
+                case 14:
+                case 19:
+                case 24:
+                case 28:
+                    switch(input)
+                    {
+                        /* 
+                         * 0 = odd bulb
+                         * 1 = high end sapphire lens
+                         * 2 = intense halogen
+                         * 3 = long life battery
+                         * 4 = focus lens
+                         * 5 = heavy duty battery
+                         * 6 = low amp filament
+                         * 7 = rubber grip
+                         * 8 = tir optic
+                         * 9 = battery
+                         * 10 = leather grip
+                         * 11 = power bulb
+                         * 12 = wide lens
+                         * 13 = broken bulb
+                         */
+
+                        // odd bulb
+                        case 0:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/OddBulb.png", UriKind.Relative);
+                            return image;
+
+                        // high-end sapphire lens
+                        case 1:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/High-EndSapphireLens.png", UriKind.Relative);
+                            return image;
+
+                        // intense halogen
+                        case 2:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/IntenseHalogen.png", UriKind.Relative);
+                            return image;
+                        
+                        // long life battery
+                        case 3:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/LongLifeBattery.png", UriKind.Relative);
+                            return image;
+
+                        // focus lens
+                        case 4:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/FocusLens.png", UriKind.Relative);
+                            return image;
+
+                        // heavy duty battery
+                        case 5:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/HeavyDutyBattery.png", UriKind.Relative);
+                            return image;
+
+                        // low amp filament
+                        case 6:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/LowAmpFilament.png", UriKind.Relative);
+                            return image;
+
+                        // rubber grip
+                        case 7:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/RubberGrip.png", UriKind.Relative);
+                            return image;
+
+                        //tir optic
+                        case 8:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/TirOptic.png", UriKind.Relative);
+                            return image;
+
+                        // battery
+                        case 9:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/Battery.png", UriKind.Relative);
+                            return image;
+
+                        //leather grip
+                        case 10:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/LeatherGrip.png", UriKind.Relative);
+                            return image;
+
+                        // power bulb
+                        case 11:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/PowerBulb.png", UriKind.Relative);
+                            return image;
+
+                        // wide lens
+                        case 12:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/WideLens.png", UriKind.Relative);
+                            return image;
+
+                        // broken bulb
+                        case 13:
+                            image = new(@"/Resources/Survivor_Items/Addons/Flashlight/BrokenBulb.png", UriKind.Relative);
+                            return image;
+
+                        default:
+                            image = new(@"/Resources/Misc/Addon_Backgrounds/Background_Common.png", UriKind.Relative);
+                            return image;
+                    }
 
 
                 default:
