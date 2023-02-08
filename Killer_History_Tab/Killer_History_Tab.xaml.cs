@@ -49,20 +49,20 @@ namespace DBD_Match_History
             Player4.Item.Source = new BitmapImage(data.Int_To_Survivor_Item(R.Next() % 30));
             Player5.Item.Source = new BitmapImage(data.Int_To_Killer_Power(R.Next() % 31));
 
-            Player1.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 0));
-            Player1.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 1)); 
+            Player1.Addon1.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 10));
+            Player1.Addon2.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 11)); 
             
-            Player2.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 2)); 
-            Player2.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 3)); 
+            Player2.Addon1.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 12)); 
+            Player2.Addon2.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 13)); 
             
-            Player3.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 4));
-            Player3.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 5));
+            Player3.Addon1.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 14));
+            Player3.Addon2.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 15));
             
-            Player4.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 6)); 
-            Player4.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 7)); 
+            Player4.Addon1.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 16)); 
+            Player4.Addon2.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 17)); 
             
-            Player5.Addon1.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 8)); 
-            Player5.Addon2.Source = new BitmapImage(data.Int_To_Survivor_Addon(6, 9));
+            Player5.Addon1.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 18)); 
+            Player5.Addon2.Source = new BitmapImage(data.Int_To_Killer_Addon(0, 19));
 
 
         }

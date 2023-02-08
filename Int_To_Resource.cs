@@ -10,6 +10,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace DBD_Match_History
 {
+    // used to convert integer values into images
     public class Data
     {
         // converts an int into the associated killer portrait
@@ -147,6 +148,7 @@ namespace DBD_Match_History
             }
         }
 
+        // converts int to a killer power
         public Uri Int_To_Killer_Power(int input)
         {
             /* 
@@ -285,6 +287,187 @@ namespace DBD_Match_History
             }
         }
 
+        // converts int to a killer power
+        public Uri Int_To_Killer_Addon(int killer, int input)
+        {
+            /* 
+             *  0 = Trapper
+             *  1 = Wraith
+             *  2 = Hillbilly
+             *  3 = Nurse
+             *  4 = Huntress
+             *  5 = Myers
+             *  6 = Hag
+             *  7 = Doctor
+             *  8 = Bubba
+             *  9 = Freddy
+             * 10 = Pig
+             * 11 = Clown
+             * 12 = Spirit
+             * 13 = Legion
+             * 14 = Plague
+             * 15 = Ghostface
+             * 16 = Demogorgon
+             * 17 = Oni
+             * 18 = Deathslinger
+             * 19 = Pyramid Head
+             * 20 = Blight
+             * 21 = Twins
+             * 22 = Trickster
+             * 23 = Nemesis
+             * 24 = Pinhead
+             * 25 = Artist
+             * 26 = Onryo
+             * 27 = Dredge
+             * 28 = Wesker
+             * 29 = Knight
+             */
+
+            Uri image;
+            switch(killer)
+            {
+
+                // trapper
+                case 0:
+                    switch(input)
+                    {
+                        /*
+                         * 0 = bloody coil
+                         * 1 = iridescent stone
+                         * 2 = honing stone
+                         * 3 = oily coil
+                         * 4 = tension spring
+                         * 5 = trapper sack
+                         * 6 = fastening tools
+                         * 7 = rusted jaws
+                         * 8 = secondary coil
+                         * 9 = tar bottle
+                         * 10 = trapper bag
+                         * 11 = 4-coil spring kit
+                         * 12 = coffee grounds
+                         * 13 = lengthened jaws
+                         * 14 = serrated jaws
+                         * 15 = wax brick
+                         * 16 = bear oil
+                         * 17 = makeshift wrap
+                         * 18 = padded jaws
+                         * 19 = trapper gloves
+                         * */
+
+                        // bloody coil
+                        case 0:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/BloodyCoil.png", UriKind.Relative);
+                            return image;
+
+                        // iridescent stone
+                        case 1:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/IridescentStone.png", UriKind.Relative);
+                            return image;
+
+                        // Honing stone
+                        case 2:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/HoningStone.png", UriKind.Relative);
+                            return image;
+
+                        // oily coil
+                        case 3:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/OilyCoil.png", UriKind.Relative);
+                            return image;
+
+                        // tension spring
+                        case 4:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/TensionSpring.png", UriKind.Relative);
+                            return image;
+
+                        // trapper sack
+                        case 5:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/TrapperSack.png", UriKind.Relative);
+                            return image;
+
+                        // fastening tools
+                        case 6:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/FasteningTools.png", UriKind.Relative);
+                            return image;
+
+                        // rusted jaws
+                        case 7:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/RustedJaws.png", UriKind.Relative);
+                            return image;
+
+                        // secondary coil
+                        case 8:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/SecondaryCoil.png", UriKind.Relative);
+                            return image;
+
+                        // tar bottle
+                        case 9:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/TarBottle.png", UriKind.Relative);
+                            return image;
+
+                        // trapper bag
+                        case 10:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/TrapperBag.png", UriKind.Relative);
+                            return image;
+
+                        // 4-coil spring kit
+                        case 11:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/4-CoilSpringKit.png", UriKind.Relative);
+                            return image;
+
+                        // coffee grounds
+                        case 12:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/CoffeeGrounds.png", UriKind.Relative);
+                            return image;
+
+                        // lengthened jaws
+                        case 13:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/LengthenedJaws.png", UriKind.Relative);
+                            return image;
+
+                        // serrated jaws
+                        case 14:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/SerratedJaws.png", UriKind.Relative);
+                            return image;
+
+                        // wax brick
+                        case 15:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/WaxBrick.png", UriKind.Relative);
+                            return image;
+
+                        // bear oil
+                        case 16:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/BearOil.png", UriKind.Relative);
+                            return image;
+
+                        // makeshift wrap
+                        case 17:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/MakeshiftWrap.png", UriKind.Relative);
+                            return image;
+
+                        // padded jaws
+                        case 18:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/PaddedJaws.png", UriKind.Relative);
+                            return image;
+
+                        // trapper gloves
+                        case 19:
+                            image = new(@"/Resources/Killer_Powers/Addons/Trapper/TrapperGloves.png", UriKind.Relative);
+                            return image;
+
+                        default:
+                            image = new(@"/Resources/Misc/Addon_Backgrounds/Background_Common.png", UriKind.Relative);
+                            return image;
+
+                    }
+
+                default:
+                    image = new(@"/Resources/Misc/Addon_Backgrounds/Background_Common.png", UriKind.Relative);
+                    return image;
+            }
+
+
+        }
+
         // converts an int into the associated killer portrait
         public string Int_To_Killer_Name(int input)
         {
@@ -388,8 +571,7 @@ namespace DBD_Match_History
             }
         }
 
-
-
+        // converts int to a survivor portrait
         public Uri Int_To_Survivor_Portrait(int input)
         {
             /* Set in the random order my half-unlocked characters were sorted in
@@ -582,6 +764,7 @@ namespace DBD_Match_History
             }
         }
 
+        // converts into to a survivor name
         public string Int_To_Survivor_Name(int input)
         {
             switch (input)
@@ -676,6 +859,7 @@ namespace DBD_Match_History
             }
         }
 
+        // converts int to a survivor perk
         public Uri Int_To_Survivor_Perk(int input)
         {
             /*
@@ -1164,8 +1348,6 @@ namespace DBD_Match_History
             }
         }
 
-
-
         // converts int to survivor fate icon
         public Uri Int_To_Survivor_Fate(int input)
         {
@@ -1201,6 +1383,7 @@ namespace DBD_Match_History
             }
         }
 
+        // converts int to a survivor offering
         public Uri Int_To_Survivor_Offering(int input)
         {
             /*
@@ -1386,8 +1569,6 @@ namespace DBD_Match_History
                     return image;
             }
         }
-
-
 
         // returns killer offering portrait
         public Uri Int_To_Killer_Offering(int input)
@@ -1993,6 +2174,7 @@ namespace DBD_Match_History
             }
         }
 
+        // converts into to a map name
         public string Int_To_Map_Name(int input)
         {
             /*
@@ -2125,7 +2307,8 @@ namespace DBD_Match_History
                     return "";
             }
         }
-
+        
+        // converts int to a survivor item
         public Uri Int_To_Survivor_Item(int input)
         {
 
@@ -2264,7 +2447,7 @@ namespace DBD_Match_History
             }
         }
 
-
+        // converts into to a respective addon
         public Uri Int_To_Survivor_Addon(int item, int input)
         {
 
@@ -2273,6 +2456,10 @@ namespace DBD_Match_History
 
             switch (item)
             {
+                //22
+                //27
+
+
                 // Maps
                 case 0:
                 case 10:
@@ -2717,6 +2904,5 @@ namespace DBD_Match_History
                     return image;
             }
         }
-
     }
 }
